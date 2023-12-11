@@ -63,7 +63,7 @@ export const DoctorCard: React.FC<DoctorCardProps> = ({ doctorData }) => {
                     flex: '1 0 0',
                     margin: '4px',
                 }}
-                className='rounded-xl shadow-md'
+                className='rounded-xl hover:border-blue-500'
             >
                 <div className='flex flex-row'>
                     <div className='w-1/2'>
