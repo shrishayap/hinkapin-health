@@ -14,7 +14,7 @@ export default function Page({ params }: { params: { category: string } }) {
 
     return (
 
-        <div className='pl-4 justify-center flex flex-col space-y-4 pr-4 pt-4'>
+        <div className='justify-center flex flex-col space-y-4 px-2 pt-4'>
 
             <Header />
             <Divider />

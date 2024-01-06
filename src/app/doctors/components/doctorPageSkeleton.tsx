@@ -14,7 +14,7 @@ export const DoctorPageSkeleton = () => {
 
                 <div className='flex flex-row mb-3'>
                     <div className='w-1/2'>
-                        <Skeleton variant="circular" width={180} height={180} />
+                        <Skeleton variant="circular" width={120} height={120} />
                     </div>
                     <div className='w-1/2 self-center'>
                         <Typography level="title-lg">

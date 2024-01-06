@@ -15,7 +15,9 @@ export const Header: React.FC<HeaderProps> = ({
         <div className='flex flex-row justify-between'>
 
             <div className='flex flex-row'>
-                <p className='font-serif font-extrabold text-3xl'>Hinkapin Health</p>
+                <Link href='/'>
+                    <p className='font-serif font-extrabold text-3xl'>Hinkapin Health</p>
+                </Link>
             </div>
 
                 <ButtonGroup >

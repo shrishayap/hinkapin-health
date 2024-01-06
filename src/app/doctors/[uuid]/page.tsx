@@ -124,7 +124,7 @@ export default function Page({ params }: { params: { uuid: string } }) {
 
     return (
 
-        <div className='pl-4 justify-center flex flex-col space-y-4 pr-4 pt-4'>
+        <div className=' justify-center flex flex-col space-y-4 px-2 pt-4'>
 
             <Header />
             <Divider />
@@ -135,7 +135,7 @@ export default function Page({ params }: { params: { uuid: string } }) {
 
                     <div className='flex flex-row mb-3'>
                         <div className='w-1/2'>
-                            <Avatar src={imageURL} sx={{ '--Avatar-size': '180px' }} />
+                            <Avatar src={imageURL} sx={{ '--Avatar-size': '120px' }} />
                         </div>
                         <div className='w-1/2 self-center'>
                             <Typography level="h3">{doctorName} <span><Typography level="body-sm">{qualification}</Typography></span></Typography>
