@@ -21,7 +21,7 @@ export default function Page({ params }: { params: { category: string } }) {
 
 
             <div className='justify-center flex flex-col space-y-4 max-w-full xl:max-w-[1150px] self-center'>
-                <InfoCardHolder />
+        
                 <Divider />
                 <ProcedureSelect category={category} />
                 <Divider />
