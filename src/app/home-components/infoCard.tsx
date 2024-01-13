@@ -3,7 +3,6 @@ import AspectRatio from '@mui/joy/AspectRatio';
 import Card from '@mui/joy/Card';
 import CardContent from '@mui/joy/CardContent';
 import CardOverflow from '@mui/joy/CardOverflow';
-import Typography from '@mui/joy/Typography';
 import Avatar from '@mui/joy/Avatar';
 
 
@@ -44,12 +43,12 @@ export const InfoCard = ({ title, content, image, number }: InfoCardProps) => {
 
             </CardOverflow>
             <CardContent>
-                <Typography level="title-md">
+                <p className='font-bold'>
                     {title}
-                </Typography>
-                <Typography level="body-sm">
+                </p>
+                <p>
                     {content}
-                </Typography>
+                </p>
             </CardContent>
         </Card>
     )

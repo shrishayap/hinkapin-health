@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import howItWorks from "@/../public/heroGraphic.png"
-import ProcedureSearchBar from './procedureSearchBar';
+import ProcedureSearchBar from '@/components/procedureSearchBar';
 
 export const LandingHero = () => {
     return (
@@ -12,7 +12,7 @@ export const LandingHero = () => {
                     <p className="text-white">Upfront pricing. Transparency. Quality healthcare. We work hard with our team of care providers to give you the best treatment at a fair price. No surprises. No gimmicks. </p>
                     <ProcedureSearchBar />
                     <a href="/contact">
-                        <button className="bg-white text-black rounded-md p-2 font-semibold w-full">Or, contact us for concierge service</button>
+                        <button className="text-white rounded-md p-2 font-semibold w-full border-2">Or, contact us for concierge service</button>
                     </a>
                 </div>
                 <Image className="hidden lg:block w-1/2" src={howItWorks} alt="Hinkapin Health" />

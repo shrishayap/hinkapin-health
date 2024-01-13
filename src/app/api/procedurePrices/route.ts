@@ -1,5 +1,4 @@
-import { doc, getDoc, getFirestore } from "firebase/firestore";
-import { app } from '../utilities/firebase/firebase';
+import procedureData from '@/../public/data/procedures.json';
 
 export const revalidate = 60;
 
@@ -14,22 +13,19 @@ export async function GET(request: { nextUrl: { searchParams: any; }; }) {
     return Response.json({ error: 'Invalid category' }, { status: 400 });
   }
 
-  const db = getFirestore(app);
-  const docRef = doc(db, "procedure-prices", category);
-  const docSnap = await getDoc(docRef);
+  const procedures = procedureData[category].map((procedureData : any)=>
+    {
+      return (
+        {
+          name: procedureData.name,
+          price: procedureData.price,
+          uuid: procedureData.uuid,
+        }
+      )
+    });
 
-  if (docSnap.exists()) {
-    return Response.json(docSnap.data())
-  } else {
-    console.error(
-      "Error getting procedure prices document",
-      {
-        requestCatorgory: category,
-        docRef: docRef.path,
-      }
-    )
-    return Response.json({ error: 'Unable to get document' }, { status: 500 });
-  }
+  return Response.json({procedures}, { status: 200 });
+
 }
 
 

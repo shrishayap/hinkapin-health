@@ -13,7 +13,7 @@ export const ContactInfo = () => {
             <p>Contact us today to get personal concierge services and get your primary consultation booked. Get started by contacting us via email, phone, or by filling out the form. We look forward to hearing from you!</p>
 
 
-            <div className='flex space-x-1'>
+            <div className='items-center flex space-x-1'>
                 <MdOutlineMail className='w-6 h-6' />
                 <div className='flex flex-col'>
                     <p className='font-bold'>Email</p>
@@ -21,7 +21,7 @@ export const ContactInfo = () => {
                 </div>
             </div>
 
-            <div className='flex space-x-1'>
+            <div className='items-center flex space-x-1'>
                 <FiPhone className='w-6 h-6' />
                 <div className='flex flex-col'>
                     <p className='font-bold'>Phone</p>
@@ -29,7 +29,7 @@ export const ContactInfo = () => {
                 </div>
             </div>
 
-            <div className='flex space-x-1'>
+            <div className='items-center flex space-x-1'>
                 <IoLocationOutline className='w-6 h-6' />
                 <div className='flex flex-col'>
                     <p className='font-bold'>Address</p>
@@ -37,7 +37,7 @@ export const ContactInfo = () => {
                 </div>
             </div>
 
-            <div className='flex space-x-1'>
+            <div className='items-center flex space-x-1'>
                 <IoTimeOutline className='w-6 h-6' />
                 <div className='flex flex-col'>
                     <p className='font-bold'>Office Hours</p>

@@ -1,6 +1,9 @@
-import React from 'react';
-import { Accordion, AccordionDetails, AccordionSummary, Chip, Option, Select, Skeleton, Table } from '@mui/joy';
+'use client'
+
+import { useEffect, useState } from 'react';
+import { Accordion, AccordionDetails, AccordionSummary, Chip, Divider, Option, Select, Skeleton, Table } from '@mui/joy';
 import { getProcedurePrices } from '../[category]/ajax';
+import Link from 'next/link';
 
 interface ProcedurePriceTableProps {
     category: string;
@@ -8,35 +11,31 @@ interface ProcedurePriceTableProps {
 
 const ProcedurePriceTable: React.FC<ProcedurePriceTableProps> = ({ category }) => {
 
-    const [priceData, setPriceData] = React.useState<{ procedureName: string, price: number | string }[]>([]);
-    const [loading, setLoading] = React.useState<boolean>(false);
+    const [procedureData, setProcedureData] = useState<{ name: string, price: number | string, uuid: string }[]>([]);
+    const [loading, setLoading] = useState<boolean>(false);
 
-    React.useEffect(() => {
+    useEffect(() => {
         const fetchData = async () => {
 
             setLoading(true);
 
             if (category === 'all') {
-                setPriceData([])
+                setProcedureData([])
                 return;
             };
 
             const newData: { procedureName: string, price: number | string }[] = [];
 
             const data = await getProcedurePrices(category)
-            
+
             if (data === null) {
-                setPriceData([]);
+                setProcedureData([]);
                 setLoading(false);
                 return;
             }
 
-            for (const procedureName in data) {
-                const price = data[procedureName];
-                newData.push({ procedureName, price: price })
-            }
 
-            setPriceData(newData);
+            setProcedureData(data.procedures);
             setLoading(false);
         };
 
@@ -45,64 +44,35 @@ const ProcedurePriceTable: React.FC<ProcedurePriceTableProps> = ({ category }) =
 
 
     if (category === 'all') return (null);
-    if (priceData.length === 0) return (null)
+    if (procedureData.length === 0) return (null)
 
     return (
-        <Accordion>
-            <AccordionSummary>See Procedure Pricing</AccordionSummary>
-            <AccordionDetails>
-                <Table sx={{ '& tr > *:not(:first-child)': { textAlign: 'right' } }}>
-                    <thead>
-                        <tr>
-                            <th style={{ width: '70%' }}>Procedure</th>
-                            <th>Cost</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {loading ? (
-                            <>
-                                <tr>
-                                    <td colSpan={2}>
-                                        <Skeleton variant="text" />
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colSpan={2}>
-                                        <Skeleton variant="text" />
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colSpan={2}>
-                                        <Skeleton variant="text" />
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colSpan={2}>
-                                        <Skeleton variant="text" />
-                                    </td>
-                                </tr>
-                            </>
+        <div className='w-full bg-white rounded-xl p-2 md:p-3 border-2'>
 
+            <Accordion>
+                <AccordionSummary>See Procedure Pricing</AccordionSummary>
+                <AccordionDetails>
 
-                        ) : (
-                            priceData.map((data) => (
-                                <tr key={data.procedureName}>
-                                    <td>{data.procedureName}</td>
-                                    <td>
-                                        <Chip
-                                            color="primary"
-                                            variant="solid"
-                                        >
-                                            {typeof data.price === 'number' ? '$' : null} {data.price}
-                                        </Chip>
-                                    </td>
-                                </tr>
-                            ))
-                        )}
-                    </tbody>
-                </Table>
-            </AccordionDetails>
-        </Accordion>
+                    <div className='flex flex-col'>
+
+                        <div className='flex flex-row justify-between border-b-2 px-2 py-1'>
+                            <p className='font-bold'>Name</p>
+                            <p className='font-bold'>Price</p>
+                        </div>
+
+                        {procedureData.map((data) => (
+                            <div className='w-full hover:bg-slate-100 px-2 py-1 border-b' key={data.uuid}>
+                                <Link href={`/procedures/${data.uuid}`} className='w-full flex flex-row justify-between'>
+                                    <p>{data.name}</p>
+                                    {typeof data.price === 'number' ? <p>${data.price.toFixed(2)}</p> : <p>{data.price}</p>}
+                                </Link>
+                            </div>
+                        ))}
+                    </div>
+
+                </AccordionDetails>
+            </Accordion>
+        </div>
     )
 
 }

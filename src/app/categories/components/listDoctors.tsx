@@ -11,6 +11,8 @@ import { MdErrorOutline } from "react-icons/md";
 
 interface ListDoctorsProps {
     category: string
+    title?: boolean
+    procedureUUID?: string | null
 }
 
 interface CatToLabelMap {
@@ -33,7 +35,9 @@ const catToLabelMap: CatToLabelMap = {
 }
 
 const ListDoctors: React.FC<ListDoctorsProps> = ({
-    category
+    category,
+    title = true,
+    procedureUUID = null
 }) => {
 
     const [loading, setLoading] = React.useState<boolean>(true);
@@ -64,7 +68,7 @@ const ListDoctors: React.FC<ListDoctorsProps> = ({
     return (
         <div className='flex flex-col space-y-3'>
 
-            {doctorData.length > 0 && <p className='text-xl font-bold' >Showing results for: {catToLabelMap[category]}</p>}
+            {(doctorData.length > 0 && title ) && <p className='text-xl font-bold' >Showing results for: {catToLabelMap[category]}</p>}
             {!loading && doctorData.length === 0 &&
 
                 <div className='flex flex-col md:flex-row'>
@@ -97,7 +101,7 @@ const ListDoctors: React.FC<ListDoctorsProps> = ({
 
                 {doctorData.map(doctor => {
                     return (
-                        <DoctorCard doctorData={doctor} key={doctor['UUID']} />
+                        <DoctorCard doctorData={doctor} key={doctor['UUID']} procedureUUID={procedureUUID}/>
                     );
                 })}
             </div>

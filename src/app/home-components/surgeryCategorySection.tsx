@@ -18,7 +18,7 @@ export const SurgeryCategorySection = () => {
 
     return (
         <div className='flex flex-col space-y-3'>
-            <h1 className='text-2xl font-bold font-serif'>Search Doctors by Category</h1>
+            <h3 className='text-xl font-bold'>Search Doctors by Category</h3>
             <div className='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-2 sm:gap-3 overflow-auto'>
                 <CategoryCard name='All specialists' icon={doctorsIcon} href='/categories/all' />
                 <CategoryCard name='Colorectal' icon={colonIcon} href='/categories/colorectal' />

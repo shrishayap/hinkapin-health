@@ -1,0 +1,696 @@
+{
+    "colorectal": [
+        {
+            "uuid": "1",
+            "category": "colorectal",
+            "name": "Colonoscopy with Biopsy",
+            "price": 1610,
+            "description": "A colonoscopy is a procedure that screens the patient for colorectal cancer."
+        },
+        {
+            "uuid": "2",
+            "category": "colorectal",
+            "name": "Fissurectomy",
+            "price": 3531,
+            "description": "A fissurectomy is used to treat anal fissures. This procedure removes the edges of the fissure, any skin tags that may have occurred in conjunction with chronic tears. A cauterizing tool is then used to seal the entire area of the wound."
+        },
+        {
+            "uuid": "3",
+            "category": "colorectal",
+            "name": "Hemorroidectomy",
+            "price": 3751,
+            "description": "Surgical removal of internal or external hemorrhoids. Hemorrhoids occur when veins in the anus area become inflammed. Surgical correction is accomplished by cutting around the tissue and tying off the vein to prevent bleeding or utilizing a surgical stapler to reposition the hemorroid and cut off the blood flow causing the inflammation."
+        }
+    ],
+    "ent": [
+        {
+            "uuid": "4",
+            "category": "ent",
+            "name": "Adenoidectomy",
+            "price": 3190,
+            "description": "Surgical removal of the adenoids. Adenoids are lymph tissue located behind the nasal passages that help the body by producing antibodies that fight infection."
+        },
+        {
+            "uuid": "5",
+            "category": "ent",
+            "name": "Adenoidectomy/Tympanostomy with Tube Insertion",
+            "price": 3707,
+            "description": "Tympanostomy tube: Insertion of small tube into eardrum to ventilate the middle ear and prevent accumulation of fluid. Myringotomy: Incision in tympanic membrane in order to ventilate the middle ear, drain fluid from the membrane, or to obtain cultures (in the case of infection)."
+        },
+        {
+            "uuid": "6",
+            "category": "ent",
+            "name": "Bilateral Myringotomy and Tubes",
+            "price": 2805,
+            "description": "Small incisions are made in both eardrums. Tubes are inserted to drain fluid and ventilate the middle ears."
+        },
+        {
+            "uuid": "7",
+            "category": "ent",
+            "name": "Excision of Mass",
+            "price": 3751,
+            "description": "A mass is surgically removed. Tissue is extracted to be examined."
+        },
+        {
+            "uuid": "8",
+            "category": "ent",
+            "name": "Septoplasty (Simple)",
+            "price": 4851,
+            "description": "Corrective surgical procedure to treat a deviated septum that may be causing breathing difficulties. An incision is made in the lining of the septum in order to reach the targeted cartilage/bone in question. The septum is straightened and temporarily stabilized using internal plastic tubes, splits or sutures."
+        },
+        {
+            "uuid": "9",
+            "category": "ent",
+            "name": "Tonsillectomy",
+            "price": 4521,
+            "description": "Tonsillectomy Surgical removal of the two oval shaped pads of tissue on either side of the the back of the throat. Tonsils are part of the lymphatic system of the body which helps to fight infection. A doctor may recommend removal of the tonsils when you experience repeated tonsillitis or when enlarged tonsils cause snoring or repeated sleep disruption."
+        },
+        {
+            "uuid": "10",
+            "category": "ent",
+            "name": "Tonsillectomy/Adenoidectomy",
+            "price": 4631,
+            "description": "Surgical removal of both the tonsils and adenoids."
+        }
+    ],
+    "gastro": [
+        {
+            "uuid": "11",
+            "category": "gastro",
+            "name": "Colonoscopy with Biopsy",
+            "price": 1610,
+            "description": "A colonoscopy is a procedure that screens the patient for colorectal cancer."
+        },
+        {
+            "uuid": "12",
+            "category": "gastro",
+            "name": "EGD with biopsy",
+            "price": 1310,
+            "description": "An upper GI endoscopy, also known as an upper endoscopy or EGD, is a medical procedure in which your doctor, usually a gastroenterologist, examines the lining of your upper digestive system through a tiny camera attached to a long, flexible tube called an endoscope."
+        },
+        {
+            "uuid": "13",
+            "category": "gastro",
+            "name": "EGD with Colonoscopy",
+            "price": 2210,
+            "description": "EGD is an examination of the lining of the stomach, esophagus, and small intestine and large intestine."
+        }
+    ],
+    "general-surgery": [
+        {
+            "uuid": "14",
+            "category": "general-surgery",
+            "name": "Anal Fistula",
+            "price": 3751,
+            "description": "Surgical removal of an anal fistula, a small tunnel between the end of the bowel and the skin near the anus, by a fistulotomy or seton procedures."
+        },
+        {
+            "uuid": "15",
+            "category": "general-surgery",
+            "name": "Excision Of Mass",
+            "price": 3751,
+            "description": "Excision of a mass involves the surgical removal of abnormal tissue or growth from the body."
+        },
+        {
+            "uuid": "16",
+            "category": "general-surgery",
+            "name": "Hemorroidectomy",
+            "price": 3751,
+            "description": "Surgical removal of internal or external hemorrhoids. Hemorrhoids occur when veins in the anus area become inflamed. Surgical correction is accomplished by cutting around the tissue and tying off the vein to prevent bleeding or utilizing a surgical stapler to reposition the hemorrhoid and cut off the blood flow causing the inflammation."
+        },
+        {
+            "uuid": "17",
+            "category": "general-surgery",
+            "name": "Hernia Repair - Epigastric",
+            "price": 5225,
+            "description": "Hernia surgery is when a surgeon closes the rupture during abdominal surgery. Surgeons can do this through Herniorrhaphy (tissue or muscle repair) or Hernioplasty (mesh repair)."
+        },
+        {
+            "uuid": "18",
+            "category": "general-surgery",
+            "name": "Hernia Repair - Inguinal",
+            "price": 5005,
+            "description": "Hernia surgery is when a surgeon closes the rupture during abdominal surgery. Surgeons can do this through Herniorrhaphy (tissue or muscle repair) or Hernioplasty (mesh repair)."
+        },
+        {
+            "uuid": "19",
+            "category": "general-surgery",
+            "name": "Hernia Repair - Inguinal Bilateral",
+            "price": 6000,
+            "description": "Hernia surgery is when a surgeon closes the rupture during abdominal surgery. Surgeons can do this through Herniorrhaphy (tissue or muscle repair) or Hernioplasty (mesh repair)."
+        },
+        {
+            "uuid": "20",
+            "category": "general-surgery",
+            "name": "Hernia Repair - Laparoscopic",
+            "price": 5775,
+            "description": "Hernia surgery is when a surgeon closes the rupture during abdominal surgery. Surgeons can do this through Herniorrhaphy (tissue or muscle repair) or Hernioplasty (mesh repair)."
+        },
+        {
+            "uuid": "21",
+            "category": "general-surgery",
+            "name": "Hernia Repair - Ventricular/Umbilical",
+            "price": 4675,
+            "description": "Hernia surgery is when a surgeon closes the rupture during abdominal surgery. Surgeons can do this through Herniorrhaphy (tissue or muscle repair) or Hernioplasty (mesh repair)."
+        },
+        {
+            "uuid": "22",
+            "category": "general-surgery",
+            "name": "Laparoscopic Appendectomy",
+            "price": 5945,
+            "description": "Surgical removal of the appendix (small pouch attached to the large intestine) in order to treat appendicitis (inflammatory condition of the appendix)."
+        },
+        {
+            "uuid": "23",
+            "category": "general-surgery",
+            "name": "Laparoscopic Cholecystectomy",
+            "price": 5945,
+            "description": "Surgery to remove the gallbladder, also known as a cholecystectomy, is most often performed to treat gallstones and the complications they cause."
+        },
+        {
+            "uuid": "24",
+            "category": "general-surgery",
+            "name": "Pilonidal Cyst",
+            "price": 4301,
+            "description": "Removal of a pilonidal cyst involves extracting a fluid-filled lump that forms near the tailbone or buttocks."
+        },
+        {
+            "uuid": "25",
+            "category": "general-surgery",
+            "name": "Port Placement",
+            "price": 3905,
+            "description": "Implantation under the skin of a port or device to allow easy access for patients undergoing chemotherapy, intravenous medication administration, or transfusions."
+        },
+        {
+            "uuid": "26",
+            "category": "general-surgery",
+            "name": "Port Removal",
+            "price": 2475,
+            "description": "Incision is made to remove a port that has been inserted into the chest for chemotherapy treatment."
+        },
+        {
+            "uuid": "27",
+            "category": "general-surgery",
+            "name": "Thyroidectomy",
+            "price": 7161,
+            "description": "Thyroidectomy is the surgical removal of part or all of the thyroid and parathyroid gland."
+        }
+    ],
+    "gynecology": [
+        {
+            "uuid": "28",
+            "category": "gynecology",
+            "name": "Diagnostic Laparoscopy",
+            "price": 5175,
+            "description": "Examination of the abdomen via use of a laparoscopic device. A surgeon makes a small incision through the abdominal wall and passes a laparoscope (surgical device with video camera) into the abdominal area in order to view organs and abdominal contents."
+        },
+        {
+            "uuid": "29",
+            "category": "gynecology",
+            "name": "Dilation & Curettage",
+            "price": 3091,
+            "description": "A surgical procedure to remove tissue from the inside of the uterus (lining)."
+        },
+        {
+            "uuid": "30",
+            "category": "gynecology",
+            "name": "Hysterectomy, Laparoscopic",
+            "price": 10000,
+            "description": "A hysterectomy is a surgery to remove a woman's uterus. In a laparoscopic hysterectomy, the surgeon makes several small incisions in the abdomen and inserts a tiny camera and surgical tools to remove the uterus through the incisions."
+        },
+        {
+            "uuid": "31",
+            "category": "gynecology",
+            "name": "Hysteroscopy, Novasure",
+            "price": 5225,
+            "description": "A hysterectomy is a surgical procedure in which a woman's uterus is removed. Novasure is a minimally invasive method that uses radiofrequency energy to treat abnormal uterine bleeding by permanently removing the lining of the uterus."
+        },
+        {
+            "uuid": "32",
+            "category": "gynecology",
+            "name": "Tubal Ligation",
+            "price": 3905,
+            "description": "A surgical procedure to cut, block or tie a women’s fallopian tubes in order to prevent future pregnancies."
+        },
+        {
+            "uuid": "33",
+            "category": "gynecology",
+            "name": "Tubal Reversal, Open",
+            "price": 5775,
+            "description": "Fallopian tubes are opened with a stent and the separated sections are reconnected with microsurgical sutures. Can be performed following tubal ligation procedure (tubes tied)."
+        }
+    ],
+    "orthopedic": [
+        {
+            "uuid": "34",
+            "category": "orthopedic",
+            "name": "Achilles Tendon Repair",
+            "price": 7403,
+            "description": "Surgical repair and reattachment of the Achilles tendon that has been separated due to injury."
+        },
+        {
+            "uuid": "35",
+            "category": "orthopedic",
+            "name": "Anterior Cruciate Ligament Repair/Reconstruction w/ graft",
+            "price": 14740,
+            "description": "Removal of the anterior cruciate ligament in the knee and replacement with tissue graft. Performed to restore function after injury."
+        },
+        {
+            "uuid": "36",
+            "category": "orthopedic",
+            "name": "Anterior Cruciate Ligament Repair/Reconstruction without graft",
+            "price": 10340,
+            "description": "Removal of the anterior cruciate ligament in the knee. Performed to restore function after injury."
+        },
+        {
+            "uuid": "37",
+            "category": "orthopedic",
+            "name": "Carpel Tunnel Release Open vs Endo",
+            "price": 4180,
+            "description": "Surgical repair and reattachment of the Achilles tendon that has been separated due to injury."
+        },
+        {
+            "uuid": "38",
+            "category": "orthopedic",
+            "name": "Closed Reduction/Casting",
+            "price": 3135,
+            "description": "Realign the bones and set them in place with a cast to heal correctly; one of the most common treatment methods for broken bones."
+        },
+        {
+            "uuid": "39",
+            "category": "orthopedic",
+            "name": "Complex Fracture Repair, Plates/Screws",
+            "price": 7700,
+            "description": "Bone fracture repair is surgery to fix a broken bone using metal screws, pins, rods, or plates to hold the bone in place."
+        },
+        {
+            "uuid": "40",
+            "category": "orthopedic",
+            "name": "Dupuytrens Contracture Release",
+            "price": 3960,
+            "description": "Thickened connective tissue in the hand caused by Dupuytren’s contracture (progressive hand deformity) is either removed or cut and divided up to regain the movement of fingers."
+        },
+        {
+            "uuid": "41",
+            "category": "orthopedic",
+            "name": "Excision Ganglion Cyst",
+            "price": 3839,
+            "description": "Surgical removal of a ganglion cyst from the joint through excision. Associated joint capsule and/or tendon sheath may also be removed."
+        },
+        {
+            "uuid": "42",
+            "category": "orthopedic",
+            "name": "Excision of Neuroma",
+            "price": 3916,
+            "description": "Surgical removal of a neuroma (swollen nerve)."
+        },
+        {
+            "uuid": "43",
+            "category": "orthopedic",
+            "name": "Knee Arthroscopy",
+            "price": 6380,
+            "description": "Knee arthroscopy is an orthopedic surgical technique that doctors use to diagnose and treat problems in the knee joint."
+        },
+        {
+            "uuid": "44",
+            "category": "orthopedic",
+            "name": "Manipulation under Anesthesia",
+            "price": 2640,
+            "description": "Procedure involving manipulation under anesthesia."
+        },
+        {
+            "uuid": "45",
+            "category": "orthopedic",
+            "name": "Shoulder Arthroscopy (Labral repair)",
+            "price": 7898,
+            "description": "Shoulder arthroscopy is surgery that uses a tiny camera called an arthroscope to examine or repair the tissues inside or around your shoulder joint."
+        },
+        {
+            "uuid": "46",
+            "category": "orthopedic",
+            "name": "Shoulder Arthroscopy Rotator Cuff Repair (arthroscopic)",
+            "price": 11403,
+            "description": "Shoulder arthroscopy is surgery that uses a tiny camera called an arthroscope to examine or repair the tissues inside or around your shoulder joint."
+        },
+        {
+            "uuid": "47",
+            "category": "orthopedic",
+            "name": "Shoulder Arthroscopy(Subacromial decompression)(Distal clavicle resection)",
+            "price": 7898,
+            "description": "Shoulder arthroscopy is surgery that uses a tiny camera called an arthroscope to examine or repair the tissues inside or around your shoulder joint."
+        },
+        {
+            "uuid": "48",
+            "category": "orthopedic",
+            "name": "Simple Fracture Repair, Perc Pinning",
+            "price": 5060,
+            "description": "Procedure involving simple fracture repair with percutaneous pinning."
+        },
+        {
+            "uuid": "49",
+            "category": "orthopedic",
+            "name": "Total Knee Arthroplasty",
+            "price": 20000,
+            "description": "Pricing includes the implant. At the Surgeon’s discretion, the procedure will be robotic-assisted."
+        },
+        {
+            "uuid": "50",
+            "category": "orthopedic",
+            "name": "Trigger Finger Release",
+            "price": 3850,
+            "description": "Procedure involving trigger finger release."
+        },
+        {
+            "uuid": "51",
+            "category": "orthopedic",
+            "name": "Wrist Arthroscopy",
+            "price": 4840,
+            "description": "Procedure involving wrist arthroscopy."
+        }
+    ],
+    "pain-management": [
+        {
+            "uuid": "52",
+            "category": "pain-management",
+            "name": "Celiac Plexus Nerve Block",
+            "price": 1116,
+            "description": "Surgical procedure performed to reduce abdominal pain caused by chronic diseases such as cancer, pancreatitis, or adhesions. Local anesthetic is injected to block celiac plexus nerves transmitting pain signals."
+        },
+        {
+            "uuid": "53",
+            "category": "pain-management",
+            "name": "Epidural Steroid Injection (Cervical, Thoracic, Lumbar)",
+            "price": 1210,
+            "description": "Injection into the epidural space surrounding the spinal sac to decrease pain and inflammation. Steroids provide anti-inflammatory action, breaking the cycle of pain and allowing the body to compensate for underlying conditions."
+        },
+        {
+            "uuid": "54",
+            "category": "pain-management",
+            "name": "Facet Joint Injection (Cervical/Lumbar) 1 Level",
+            "price": 1331,
+            "description": "Treatment locating and treating the source of pain in facet joints, facilitating rehabilitation. Anesthetic and/or steroid medication is injected into two points in the facet joint to anesthetize and block pain."
+        },
+        {
+            "uuid": "55",
+            "category": "pain-management",
+            "name": "Facet Joint Injection (Cervical/Lumbar) 2 Level",
+            "price": 1452,
+            "description": "Procedure to locate and treat the source of pain in facet joints, aiding rehabilitation. Anesthetic and/or steroid medication is injected into one point in the facet joint to anesthetize and block pain."
+        },
+        {
+            "uuid": "56",
+            "category": "pain-management",
+            "name": "Facet Joint Injection (Cervical/Lumbar) 3 Level",
+            "price": 1463,
+            "description": "Injection of anesthetic and anti-inflammatory medication into facet joints to relieve inflammation and pain caused by osteoarthritis or injury."
+        },
+        {
+            "uuid": "57",
+            "category": "pain-management",
+            "name": "Facet Joint RFA",
+            "price": 1870,
+            "description": "Surgical removal of tumors or dysfunctional tissue using heat generated from radio frequency current. The procedure involves placing a needle-like RFA probe inside the tumor."
+        },
+        {
+            "uuid": "58",
+            "category": "pain-management",
+            "name": "Facet Joint RFA Bilateral",
+            "price": 1980,
+            "description": "Description not available."
+        },
+        {
+            "uuid": "59",
+            "category": "pain-management",
+            "name": "Lumbar Sympathetic Nerve Block",
+            "price": 1166,
+            "description": "Procedure to block sympathetic nerves causing pain in the lower extremities. Local anesthetic is injected around the sympathetic nerves to prevent them from carrying pain information back to the spinal cord."
+        },
+        {
+            "uuid": "60",
+            "category": "pain-management",
+            "name": "Occipital Nerve Block for Headache",
+            "price": 660,
+            "description": "Injection of a steroid or other medication around the greater and lesser occipital nerves to alleviate inflammation causing headaches or migraines."
+        },
+        {
+            "uuid": "61",
+            "category": "pain-management",
+            "name": "SI Joint",
+            "price": 1166,
+            "description": "Description not available."
+        },
+        {
+            "uuid": "62",
+            "category": "pain-management",
+            "name": "SI Joint RFA",
+            "price": 1980,
+            "description": "Injection of anesthetic and anti-inflammatory medication into sacroiliac joint to alleviate pain, inflammation, and restore motion."
+        },
+        {
+            "uuid": "63",
+            "category": "pain-management",
+            "name": "Steroid Injection Knee",
+            "price": 572,
+            "description": "Injection of pain-relieving medication below the kneecap to relieve stiffness, pain, and inflammation caused by osteoarthritis."
+        },
+        {
+            "uuid": "64",
+            "category": "pain-management",
+            "name": "Supraorbital Nerve Block",
+            "price": 660,
+            "description": "Injection of depot steroid into supraorbital nerve to aid repair of lacerations or excisions of the scalp."
+        },
+        {
+            "uuid": "65",
+            "category": "pain-management",
+            "name": "Trigger Point Injection",
+            "price": 660,
+            "description": "Injection of anesthetic or corticosteroid directly into the area identified as a 'trigger point' of pain."
+        }
+    ],
+    "plastic-surgery": [
+        {
+            "uuid": "66",
+            "category": "plastic-surgery",
+            "name": "Abdominoplasty",
+            "price": "Contact Us",
+            "description": "Cosmetic surgical procedure in which excess skin and fat is removed from the middle and lower abdomen in order to improve tone, firmness, and overall appearance. Also known as a 'tummy tuck'. The procedure also helps to restore weakened or separated muscles, so to create a stronger, flatter tummy."
+        },
+        {
+            "uuid": "67",
+            "category": "plastic-surgery",
+            "name": "Blepharoplasty Upper and Lower",
+            "price": "Contact Us",
+            "description": "Cosmetic surgical procedure in which excess skin and pockets of fat are removed from the upper and lower eyelids. This helps to correct loose, sagging skin around the eye area and create a more youthful look. Also known as an ‘eye lift’."
+        },
+        {
+            "uuid": "68",
+            "category": "plastic-surgery",
+            "name": "Blepharoplasty Upper or Lower",
+            "price": "Contact Us",
+            "description": "Cosmetic surgical procedure in which excess skin and pockets of fat are removed from the upper and lower eyelids. This helps to correct loose, sagging skin around the eye area and create a more youthful look. Also known as an ‘eye lift’."
+        },
+        {
+            "uuid": "69",
+            "category": "plastic-surgery",
+            "name": "Breast Augmentation (Hybrid)",
+            "price": "Contact Us",
+            "description": ""
+        },
+        {
+            "uuid": "70",
+            "category": "plastic-surgery",
+            "name": "Breast Augmentation (Saline)",
+            "price": "Contact Us",
+            "description": "Cosmetic surgical procedure in which a saline implant is placed behind the breast and/or chest muscle to increase the volume and appearance of the breast. Breast augmentation may also replace volume lost due to breastfeeding or weight loss, or to improve the shape of the breast. A saline implant consists of a silicone shell that is inserted into the body and then filled to its desired volume with saline fluid."
+        },
+        {
+            "uuid": "71",
+            "category": "plastic-surgery",
+            "name": "Breast Augmentation (Silicone)",
+            "price": "Contact Us",
+            "description": "Cosmetic surgical procedure in which a silicone implant is placed behind the breast and/or chest muscle to increase the volume and appearance of the breast. Breast augmentation may also replace volume lost due to breastfeeding or weight loss, or to improve the shape of the breast. Silicone gel is an inert polymer consisting of molecules stuck to one another in a cohesive matrix."
+        },
+        {
+            "uuid": "72",
+            "category": "plastic-surgery",
+            "name": "Rhinoplasty",
+            "price": "Contact Us",
+            "description": ""
+        }
+    ],
+    "podiatry": [
+        {
+            "uuid": "73",
+            "category": "podiatry",
+            "name": "Bunionectomy",
+            "price": 4785,
+            "description": "Surgical removal of the enlargement (bone and tissue) located at the base of the big toe, known as a bunion."
+        },
+        {
+            "uuid": "74",
+            "category": "podiatry",
+            "name": "Excision of Neuroma",
+            "price": 3916,
+            "description": "Procedure for the removal of a neuroma, with no specific description provided."
+        },
+        {
+            "uuid": "75",
+            "category": "podiatry",
+            "name": "Haglunds",
+            "price": 3905,
+            "description": "Resection of Haglunds Deformity involves removing the bony bump on the back of the calcaneus or heel bone."
+        },
+        {
+            "uuid": "76",
+            "category": "podiatry",
+            "name": "Hammertoe (1)",
+            "price": 3245,
+            "description": "Correction procedure for Hammertoe."
+        },
+        {
+            "uuid": "77",   
+            "category": "podiatry",
+            "name": "Hammertoe (2)",
+            "price": 3795,
+            "description": "Correction procedure for Hammertoe."
+        },
+        {
+            "uuid": "78",
+            "category": "podiatry",
+            "name": "Hammertoe (3)",
+            "price": 4345,
+            "description": "Correction procedure for Hammertoe."
+        },
+        {
+            "uuid": "79",
+            "category": "podiatry",
+            "name": "Instep / Fasciotomy",
+            "price": 3025,
+            "description": "Procedure with no specific description provided."
+        },
+        {
+            "uuid": "80",
+            "category": "podiatry",
+            "name": "Osteotomy",
+            "price": 3795,
+            "description": "Procedure with no specific description provided."
+        },
+        {
+            "uuid": "81",
+            "category": "podiatry",
+            "name": "Platelet-Rich Plasma Injection",
+            "price": 2750,
+            "description": "Procedure with no specific description provided."
+        },
+        {
+            "uuid": "82",
+            "category": "podiatry",
+            "name": "Toe Amputation",
+            "price": 3421,
+            "description": "Procedure with no specific description provided."
+        }
+    ],
+    "spine": [
+        {
+            "uuid": "83",
+            "category": "spine",
+            "name": "ACDF 1 level",
+            "price": 19800,
+            "description": "Removal of one damaged or herniated disc to relieve pressure on spinal cord or nerve root and alleviate corresponding pain, weakness, numbness, and tingling."
+        },
+        {
+            "uuid": "84",
+            "category": "spine",
+            "name": "ACDF 2 level",
+            "price": 27456,
+            "description": "Removal of two damaged or herniated discs to relieve pressure on spinal cord or nerve root and alleviate corresponding pain, weakness, numbness, and tingling."
+        },
+        {
+            "uuid": "85",
+            "category": "spine",
+            "name": "Laminectomy Lumbar 1 level",
+            "price": 10670,
+            "description": "Removal of a small portion of bone over the nerve root and/or disc material from under the nerve root. Performed to alleviate pain caused by lumbar spinal stenosis (enlarged facet joints placing pressure on nerves)."
+        },
+        {
+            "uuid": "86",
+            "category": "spine",
+            "name": "Lumbar Fusion 1 level",
+            "price": 38500,
+            "description": "Surgical procedure in which one vertebrae (spinal discs) of the spine is permanently fused together to prevent painful motion and provide stability following injury, disease, or natural aging."
+        },
+        {
+            "uuid": "87",
+            "category": "spine",
+            "name": "Lumbar Fusion 2 level",
+            "price": 52250,
+            "description": "Surgical procedure in which two vertebrae (spinal discs) of the spine are permanently fused together to prevent painful motion and provide stability following injury, disease, or natural aging."
+        },
+        {
+            "uuid": "88",
+            "category": "spine",
+            "name": "Microdisectomy 1 level",
+            "price": 17387,
+            "description": "Removal of lumbar herniated disc material causing pressure on nerve root or spinal cord. Performed with a microscope to view disc and nerves and allow for a smaller incision."
+        },
+        {
+            "uuid": "89",
+            "category": "spine",
+            "name": "Superion Indirect Decompression System",
+            "price": 13860,
+            "description": "During this procedure, your doctor will implant the superion device (a small expandable spacer) through a small incision in the lower back into the affected area of the spinal canal. When expanded, the device relieves the compression on the spine experienced by patients with lumbar spinal stenosis. The procedure takes between 30 to 45 minutes with very little recovery time. This may be the best treatment option for patients who have failed to find relief through more conservative treatment options."
+        }
+    ],
+    "urology": [
+        {
+            "uuid": "90",
+            "category": "urology",
+            "name": "Circumcision",
+            "price": 3025,
+            "description": "A circumcision is a surgical procedure involving the removal of the foreskin from the penis."
+        },
+        {
+            "uuid": "91",
+            "category": "urology",
+            "name": "Cystoscopy",
+            "price": 3695,
+            "description": "A cystoscopy is a procedure that examines the linings of the bladder and urethra to diagnose and treat urinary tract issues."
+        },
+        {
+            "uuid": "92",
+            "category": "urology",
+            "name": "Cystoscopy with Lithotripsy",
+            "price": 5005,
+            "description": "A combination procedure involving cystoscopy and laser lithotripsy to break kidney stones in the urinary tract."
+        },
+        {
+            "uuid": "93",
+            "category": "urology",
+            "name": "ESWL (Lithotripsy Extracorporeal Shockwave)",
+            "price": 6347,
+            "description": "Extracorporeal shock wave lithotripsy (ESWL) is a non-invasive method that uses shock waves to break kidney stones."
+        },
+        {
+            "uuid": "94",
+            "category": "urology",
+            "name": "Orchiectomy",
+            "price": 4301,
+            "description": "Orchiectomy is the surgical removal of one or both testicles."
+        },
+        {
+            "uuid": "95",
+            "category": "urology",
+            "name": "Ureteroscopy",
+            "price": 3795,
+            "description": "Ureteroscopy is a diagnostic and treatment procedure using a small scope inserted into the bladder and ureter to address urinary tract issues."
+        },
+        {
+            "uuid": "96",
+            "category": "urology",
+            "name": "Vasectomy",
+            "price": 3025,
+            "description": "A vasectomy is a minimally invasive operation for men to prevent pregnancy by blocking sperm from reaching semen during ejaculation."
+        }
+    ]
+}

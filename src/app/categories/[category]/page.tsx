@@ -13,13 +13,11 @@ export default function Page({ params }: { params: { category: string } }) {
 
     return (
 
-        <div className='justify-center flex flex-col space-y-4 px-2 py-4'>
+        <div className='justify-center flex flex-col space-y-4'>
 
             <Header />
-            <Divider />
 
-
-            <div className='justify-center flex flex-col space-y-4 max-w-[1150px] self-center  w-full'>
+            <div className='justify-center flex flex-col space-y-4 max-w-[1200px] self-center px-2  w-full'>
                 <ProcedureSelect category={category} />
                 <Divider />
                 <ListDoctors category={category} />

@@ -14,10 +14,10 @@ export const PopularProcedureCard = ({ name, price, icon, href }: PopularProcedu
     return (
         <div className="flex flex-col items-center space-y-4 p-4 border-2 rounded-lg justify-end bg-white hover">
             <div className='h-full'>
-                <h2 className="text-lg text-center">{name}</h2>
+                <h2 className="text-center">{name}</h2>
             </div>
             <Image alt={name} src={icon} width={50} height={50} />
-            <p className="text-3xl font-bold font-serif">{price}</p>
+            <p className="text-2xl font-bold font-serif">{price}</p>
             <Button endDecorator={<KeyboardArrowRight />} variant="outlined" component="a" color='neutral' href={href}>
                 Learn More
             </Button>

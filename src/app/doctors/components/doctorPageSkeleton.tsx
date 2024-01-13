@@ -10,7 +10,7 @@ export const DoctorPageSkeleton = () => {
     return (
         <div className='flex flex-row justify-center'>
 
-            <div className='flex flex-col mx-4 md:mx-10 lg:mx-24 max-w-full xl:max-w-[1150px] self-center'>
+            <div className='flex flex-col mx-4 xl:max-w-[1200px] self-center'>
 
                 <div className='flex flex-row mb-3'>
                     <div className='w-1/2'>
@@ -69,7 +69,7 @@ export const DoctorPageSkeleton = () => {
 
                 <Divider />
 
-                <AccordionGroup className='mt-3'>
+                <AccordionGroup className='mt-3' disableDivider>
 
                     <Accordion>
                         <AccordionSummary>

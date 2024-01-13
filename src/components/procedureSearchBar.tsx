@@ -1,0 +1,68 @@
+'use client'
+
+import Autocomplete from '@mui/joy/Autocomplete';
+import SearchIcon from '@mui/icons-material/Search';
+import CircularProgress from '@mui/joy/CircularProgress';
+import { useState, useEffect } from 'react';
+import { getSearchQeury } from './ajax';
+import AutocompleteOption from '@mui/joy/AutocompleteOption';
+
+interface ProcedureSearchBarProps {
+    size?: 'sm' | 'md' | 'lg'
+}
+
+export const ProcedureSearchBar = ({size = 'lg'}: ProcedureSearchBarProps) => {
+
+    const [loading, setLoading] = useState(false)
+    const [searchTerm, setSearchTerm] = useState('')
+    const [options, setOptions] = useState<any[]>([])
+
+    useEffect(() => {
+        const fetchData = async () => {
+            setOptions([])
+            if (searchTerm.length > 2) {
+                setLoading(true)
+                const matching = await getSearchQeury(searchTerm)
+                matching && setOptions(matching)
+
+                setLoading(false)
+            }
+        }
+        fetchData();
+    }, [searchTerm]);
+
+
+
+    return (
+        < Autocomplete
+        className='flex-grow'
+            freeSolo
+            noOptionsText="No matching procedures"
+            inputValue={searchTerm}
+            onInputChange={(event, newInputValue) => {
+                setSearchTerm(newInputValue);
+            }}
+            startDecorator={< SearchIcon />}
+            placeholder="Search for procedures"
+            options={options}
+            size={size}
+            loading={loading}
+            endDecorator={
+                loading && <CircularProgress size="sm" />
+            }
+            getOptionLabel={(option) => option.name}
+            renderOption={
+                (props, option) => (
+                    <AutocompleteOption {...props}>
+                        <div className='flex flex-col'>
+                            <p className='font-bold text-sm'>{option.name}</p>
+                            <p className='font-light text-xs'>{option.description}</p>
+                        </div>
+                    </AutocompleteOption>
+                )
+            }
+        />
+    )
+}
+
+export default ProcedureSearchBar;

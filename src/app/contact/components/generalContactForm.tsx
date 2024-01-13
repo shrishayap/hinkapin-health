@@ -6,7 +6,7 @@ import FormControl from '@mui/joy/FormControl';
 import FormLabel from '@mui/joy/FormLabel';
 import Textarea from '@mui/joy/Textarea';
 
-export const ContactForm = () => {
+export const GeneralContactForm = () => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
@@ -15,6 +15,8 @@ export const ContactForm = () => {
 
     return (
         <div className='flex flex-col space-y-2 bg-gradient-to-r from-slate-900 to-slate-700 p-3 md:p-8 rounded-xl'>
+
+            <p className='text-white text-lg font-bold'>Contact Hinkapin Health today</p>
 
             <div className='grid grid-cols-2 gap-2'>
 
@@ -77,10 +79,10 @@ export const ContactForm = () => {
 
             <Button color='neutral' variant='outlined' className='w-full bg-white'>Submit</Button>
 
-            <p className='text-sm font-light text-white'>Please do not submit any sensetive medical information</p>
+            <p className='text-sm font-light text-white'>Do not submit any sensetive medical information</p>
 
         </div>
     );
 };
 
-export default ContactForm;
+export default GeneralContactForm;

@@ -11,14 +11,14 @@ export const PopularProcedureSection = () => {
 
     return (
         <div className='flex flex-col space-y-3'>
-            <h1 className='text-2xl font-bold font-serif'>View Popular Surgeries</h1>
+            <h3 className='text-xl font-bold'>View Popular Surgeries</h3>
             <div className='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-2 sm:gap-3 overflow-auto'>
-                <PopularProcedureCard name='Colonoscopy with Biopsy' price='$1610' icon={colonIcon} href='/' />
-                <PopularProcedureCard name='Gall Bladder Removal' price='$5945' icon={gallBladderIcon} href='/' />
-                <PopularProcedureCard name='Hernia Repair' price='$5225' icon={herniaIcon} href='/' />
-                <PopularProcedureCard name='Kidney Stone' price='$5005' icon={kidneyStoneIcon} href='/' />
-                <PopularProcedureCard name='Tonsil & Adnoind Removal' price='$4631' icon={tonsilIcon} href='/' />
-                <PopularProcedureCard name='Tubal Reversal' price='$5775' icon={motherIcon} href='/' />
+                <PopularProcedureCard name='Colonoscopy with Biopsy' price='$1610' icon={colonIcon} href='/procedures/1' />
+                <PopularProcedureCard name='Gall Bladder Removal' price='$5945' icon={gallBladderIcon} href='/procedures/23' />
+                <PopularProcedureCard name='Hernia Repair' price='$5225' icon={herniaIcon} href='/procedures/17' />
+                <PopularProcedureCard name='Kidney Stone' price='$5005' icon={kidneyStoneIcon} href='/procedures/92' />
+                <PopularProcedureCard name='Tonsil & Adnoind Removal' price='$4631' icon={tonsilIcon} href='/procedures/10' />
+                <PopularProcedureCard name='Tubal Reversal' price='$5775' icon={motherIcon} href='/procedures/33' />
             </div>
         </div>
 

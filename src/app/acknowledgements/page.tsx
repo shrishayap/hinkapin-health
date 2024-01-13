@@ -23,7 +23,7 @@ export function Page() {
             <a href="https://www.flaticon.com/free-icons/podiatry" title="podiatry icons">Podiatry icons created by Flat Icons - Flaticon</a>
             <a href="https://www.flaticon.com/free-icons/spine" title="spine icons">Spine icons created by Freepik - Flaticon</a>
             <a href="https://www.flaticon.com/free-icons/kidney" title="kidney icons">Kidney icons created by Freepik - Flaticon</a>
-            <a href="https://www.freepik.com/free-vector/hand-drawn-no-data-concept_55024599.htm#query=not%20found&position=29&from_view=search&track=ais&uuid=ebc73210-d351-4e90-929c-28b4fac7240e">Not Found Image by pikisuperstar</a> on Freepik
+            <a href="https://www.freepik.com/free-vector/hand-drawn-no-data-concept_55024599.htm#query=not%20found&position=29&from_view=search&track=ais&uuid=ebc73210-d351-4e90-929c-28b4fac7240e">Not Found Image by pikisuperstar on Freepik</a> 
             
         </div>
     )

@@ -30,9 +30,10 @@ interface DoctorCardProps {
         "Image URL": string
         "UUID": string
     }
+    procedureUUID?: string | null
 }
 
-export const DoctorCard: React.FC<DoctorCardProps> = ({ doctorData }) => {
+export const DoctorCard: React.FC<DoctorCardProps> = ({ doctorData, procedureUUID =  null}) => {
 
     //add defensive coding checking for doctorName
     let doctorName = "";
@@ -58,6 +59,11 @@ export const DoctorCard: React.FC<DoctorCardProps> = ({ doctorData }) => {
     let imageURL = 'https://firebasestorage.googleapis.com/v0/b/hinkapin-health.appspot.com/o/doctorImages%2F'
     imageURL += doctorData["UUID"];
     imageURL += ".jpeg?alt=media";
+
+    let link = `/doctors/${doctorData['UUID']}`
+    if (procedureUUID) {
+        link += `?procedureUUID=${procedureUUID}`
+    }
 
 
 
@@ -106,7 +112,7 @@ export const DoctorCard: React.FC<DoctorCardProps> = ({ doctorData }) => {
                 </CardContent>
 
 
-                <Button variant="outlined" color="neutral" href={`/doctors/${doctorData['UUID']}`} component='a'>
+                <Button variant="outlined" color="neutral" href={link} component='a'>
                     Learn More
                 </Button>
 

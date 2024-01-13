@@ -10,7 +10,7 @@ export const CategoryCard = ({ name, icon, href }: CategoryCardProps) => {
         <a href={href}>
             <div className="flex flex-col items-center space-y-4 p-4 border-2 rounded-lg justify-end bg-white cursor-pointer h-full">
                 <div className='h-full'>
-                    <h2 className="text-lg text-center">{name}</h2>
+                    <p className="text-center">{name}</p>
                 </div>
                 <Image alt={name} src={icon} width={50} height={50} />
             </div>
