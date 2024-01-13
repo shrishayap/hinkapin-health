@@ -14,7 +14,7 @@ import { amber, red, grey, blue } from '@mui/material/colors';
 import { notFound } from 'next/navigation';
 import { getDoctorData } from './ajax';
 import DoctorPageSkeleton from '../components/doctorPageSkeleton';
-import Header from '@/app/categories/components/header';
+import Header from '@/components/header';
 
 export default function Page({ params }: { params: { uuid: string } }) {
 

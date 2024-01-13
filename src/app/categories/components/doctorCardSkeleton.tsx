@@ -10,12 +10,7 @@ export default function DoctorCardSkeleton() {
 
         <Card
             variant="outlined"
-            sx={{
-                minWidth: '320px',
-                flex: '1 0 0',
-                margin: '4px',
-            }}
-            className='rounded-xl hover:border-blue-500'
+            className='rounded-xl border-2'
         >
             <div className='flex flex-row'>
                 <div className='w-1/2'>

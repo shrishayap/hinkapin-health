@@ -1,5 +1,4 @@
 import Image, { StaticImageData } from 'next/image';
-
 interface CategoryCardProps {
     name: string;
     icon: StaticImageData;
@@ -9,7 +8,7 @@ interface CategoryCardProps {
 export const CategoryCard = ({ name, icon, href }: CategoryCardProps) => {
     return (
         <a href={href}>
-            <div className="flex flex-col items-center space-y-4 p-4 border-2 rounded-lg justify-end bg-white cursor-pointer">
+            <div className="flex flex-col items-center space-y-4 p-4 border-2 rounded-lg justify-end bg-white cursor-pointer h-full">
                 <div className='h-full'>
                     <h2 className="text-lg text-center">{name}</h2>
                 </div>

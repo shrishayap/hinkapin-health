@@ -1,16 +1,19 @@
 'use client'
 import Button from '@mui/joy/Button';
 import Drawer from '@mui/joy/Drawer';
+import Link from 'next/link';
 import { useState } from 'react';
 
 export const HomeNavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const navigation = ['Home', 'Popular Procedures', 'Categories', 'How it Works'];
-    const refs = ['home', 'popularProcedures', 'surgeryCategory', 'howItWorks']
+    const navigation = ['Popular Procedures', 'Categories', 'How it Works'];
+    const refs = ['popularProcedures', 'surgeryCategory', 'howItWorks']
 
     return (
         <nav className="flex justify-between items-center p-6 bg-white border-b-2">
-            <h1 className="text-3xl font-bold font-serif">Hinkapin Health</h1>
+            <Link href='/'>
+                <h1 className="text-3xl font-bold font-serif">Hinkapin Health</h1>
+            </Link>
             <div className="hidden md:flex ">
                 {navigation.map((item, index) => (
                     <a key={index} href={`#${refs[index]}`} className="hover:bg-slate-200 rounded-lg px-3 py-2">

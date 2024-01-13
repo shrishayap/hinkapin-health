@@ -12,7 +12,7 @@ interface PopularProcedureCardProps {
 
 export const PopularProcedureCard = ({ name, price, icon, href }: PopularProcedureCardProps) => {
     return (
-        <div className="flex flex-col items-center space-y-4 p-4 border-2 rounded-lg justify-end bg-white">
+        <div className="flex flex-col items-center space-y-4 p-4 border-2 rounded-lg justify-end bg-white hover">
             <div className='h-full'>
                 <h2 className="text-lg text-center">{name}</h2>
             </div>

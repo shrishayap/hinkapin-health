@@ -1,10 +1,12 @@
 'use client'
-
 import React from 'react';
 import DoctorCard from './doctorCard';
-import { Typography } from '@mui/joy';
 import { getDoctorPreviews } from '../[category]/ajax';
 import DoctorCardSkeleton from './doctorCardSkeleton';
+import notFoundImage from '@/../public/notFound.png'
+import Image from 'next/image'
+import { MdErrorOutline } from "react-icons/md";
+
 
 
 interface ListDoctorsProps {
@@ -16,7 +18,7 @@ interface CatToLabelMap {
 }
 
 const catToLabelMap: CatToLabelMap = {
-    'all': 'Our Specialists in Dallas - Fort Worth',
+    'all': 'All Specialists in Dallas - Fort Worth',
     'colorectal': 'Colorectal Specialists',
     'ent': 'Ear, Nose, & Throat Specialists',
     'gastro': 'Gastroenterology Specialists',
@@ -62,9 +64,22 @@ const ListDoctors: React.FC<ListDoctorsProps> = ({
     return (
         <div className='flex flex-col space-y-3'>
 
-            {doctorData.length > 0 && <Typography level='h4' >Showing results for: {catToLabelMap[category]}</Typography>}
-            
-            <div className='flex flex-wrap flex-row'>
+            {doctorData.length > 0 && <p className='text-xl font-bold' >Showing results for: {catToLabelMap[category]}</p>}
+            {!loading && doctorData.length === 0 &&
+
+                <div className='flex flex-col md:flex-row'>
+                    <p className='text-xl self-center bg-red-300 p-4 rounded-xl'>
+                        <div className='flex justify-center'>
+                            <MdErrorOutline className='w-10 h-10'/>
+                        </div>
+                        Sorry, we were not able to find any specialists matching this category.
+                        Please select another category to search other available providers.
+                    </p>
+                    <Image className="max-w-[600px] self-center" src={notFoundImage} alt="Data not found" />
+                </div>
+
+            }
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 md:gap-2 lg:gap-3'>
 
                 {loading &&
                     <>
@@ -74,20 +89,10 @@ const ListDoctors: React.FC<ListDoctorsProps> = ({
                         <DoctorCardSkeleton />
                         <DoctorCardSkeleton />
                         <DoctorCardSkeleton />
-                        <DoctorCardSkeleton />
                     </>
                 }
 
-                {!loading && doctorData.length === 0 &&
 
-                    <div className='text-center m-16'>
-                        <Typography level='h2'>
-                            Sorry, we were not able to find any specialists matching &quot;{category}&quot;.
-                            Please select another category to search other available providers
-                        </Typography>
-                    </div>
-
-                }
 
 
                 {doctorData.map(doctor => {
