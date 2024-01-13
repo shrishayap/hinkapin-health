@@ -6,12 +6,13 @@ import CircularProgress from '@mui/joy/CircularProgress';
 import { useState, useEffect } from 'react';
 import { getSearchQeury } from './ajax';
 import AutocompleteOption from '@mui/joy/AutocompleteOption';
+import Link from 'next/link';
 
 interface ProcedureSearchBarProps {
     size?: 'sm' | 'md' | 'lg'
 }
 
-export const ProcedureSearchBar = ({size = 'lg'}: ProcedureSearchBarProps) => {
+export const ProcedureSearchBar = ({ size = 'lg' }: ProcedureSearchBarProps) => {
 
     const [loading, setLoading] = useState(false)
     const [searchTerm, setSearchTerm] = useState('')
@@ -35,7 +36,7 @@ export const ProcedureSearchBar = ({size = 'lg'}: ProcedureSearchBarProps) => {
 
     return (
         < Autocomplete
-        className='flex-grow'
+            className='flex-grow'
             freeSolo
             noOptionsText="No matching procedures"
             inputValue={searchTerm}
@@ -53,11 +54,13 @@ export const ProcedureSearchBar = ({size = 'lg'}: ProcedureSearchBarProps) => {
             getOptionLabel={(option) => option.name}
             renderOption={
                 (props, option) => (
-                    <AutocompleteOption {...props}>
-                        <div className='flex flex-col'>
-                            <p className='font-bold text-sm'>{option.name}</p>
-                            <p className='font-light text-xs'>{option.description}</p>
-                        </div>
+                    <AutocompleteOption {...props} key={option.uuid}>
+                        <Link href={`/procedures/${option.uuid}`}>
+                            <div className='flex flex-col'>
+                                <p className='font-bold text-sm'>{option.name}</p>
+                                <p className='font-light text-xs'>{option.description}</p>
+                            </div>
+                        </Link>
                     </AutocompleteOption>
                 )
             }

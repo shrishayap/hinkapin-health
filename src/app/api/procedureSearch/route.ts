@@ -11,7 +11,8 @@ export async function GET(request: { nextUrl: { searchParams: any; }; }) {
             procedure.description.toLowerCase().includes(searchQuery.toLowerCase())
         ).map((procedure: any) => ({
             name: procedure.name,
-            description: procedure.description
+            description: procedure.description,
+            uuid: procedure.uuid,
         }));
 
         results.push(...matchingProcedures);
