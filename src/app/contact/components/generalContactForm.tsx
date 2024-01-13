@@ -1,9 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import Input from '@mui/joy/Input';
-import Button from '@mui/joy/Button';
 import FormControl from '@mui/joy/FormControl';
-import FormLabel from '@mui/joy/FormLabel';
 import Textarea from '@mui/joy/Textarea';
 
 export const GeneralContactForm = () => {
@@ -21,7 +19,7 @@ export const GeneralContactForm = () => {
             <div className='grid grid-cols-2 gap-2'>
 
                 <FormControl>
-                    <FormLabel className='text-white'>First name</FormLabel>
+                    <p className='text-white'>First name</p>
                     <Input
                         required
                         placeholder='First Name'
@@ -31,7 +29,7 @@ export const GeneralContactForm = () => {
                 </FormControl>
 
                 <FormControl>
-                    <FormLabel className='text-white'>Last Name</FormLabel>
+                    <p className='text-white'>Last Name</p>
                     <Input
                         required
                         placeholder='Last Name'
@@ -46,7 +44,7 @@ export const GeneralContactForm = () => {
 
 
             <FormControl>
-                <FormLabel className='text-white'>Email</FormLabel>
+                <p className='text-white'>Email</p>
                 <Input
                     required
                     placeholder='Email'
@@ -56,7 +54,7 @@ export const GeneralContactForm = () => {
             </FormControl>
 
             <FormControl>
-                <FormLabel className='text-white'>Phone</FormLabel>
+                <p className='text-white'>Phone</p>
                 <Input
                     required
                     placeholder='Phone'
@@ -66,7 +64,7 @@ export const GeneralContactForm = () => {
             </FormControl>
 
             <FormControl>
-                <FormLabel className='text-white'>Message</FormLabel>
+                <p className='text-white'>Message</p>
                 <Textarea
                     required
                     placeholder="Your Message..."
@@ -77,7 +75,7 @@ export const GeneralContactForm = () => {
 
             </FormControl>
 
-            <Button color='neutral' variant='outlined' className='w-full bg-white'>Submit</Button>
+            <button className='w-full text-white p-1 border-2 rounded-md'>Submit</button>
 
             <p className='text-sm font-light text-white'>Do not submit any sensetive medical information</p>
 
