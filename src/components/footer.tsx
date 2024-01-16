@@ -3,6 +3,7 @@ import { MdEmail } from "react-icons/md";
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { Divider } from "@mui/joy";
+import Link from "next/link";
 
 
 
@@ -17,10 +18,10 @@ export const Footer = () => {
                 </div>
                 
                 <div className="text-left sm:space-y-2 sm:text-center">
-                    <a href="/acknowledgements" className="block hover:underline">Acknowledgements</a>
+                    <Link href="/acknowledgements" className="block hover:underline">Acknowledgements</Link>
                     <div className="flex justify-left sm:justify-center space-x-3 ">
-                        <a href="https://www.facebook.com/NTTCSurgeryCenter"><FaFacebook className="w-6 h-6" /></a>
-                        <a href="https://twitter.com/NTTC_SC"><FaXTwitter className="w-6 h-6" /></a>
+                        <Link href="https://www.facebook.com/NTTCSurgeryCenter"><FaFacebook className="w-6 h-6" /></Link>
+                        <Link href="https://twitter.com/NTTC_SC"><FaXTwitter className="w-6 h-6" /></Link>
                     </div>
                 </div>
 

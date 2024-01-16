@@ -43,9 +43,9 @@ export const Header = () => {
 
                 <div className="hidden md:flex space-x-3">
                     {navigation.map((item, index) => (
-                        <a key={index} href={`${link[index]}`} className="hover:border-b-2 border-black self-center">
+                        <Link key={index} href={`${link[index]}`} className="hover:border-b-2 border-black self-center">
                             <p className='font-semibold text-sm'>{item}</p>
-                        </a>
+                        </Link>
                     ))}
                 </div>
 
@@ -62,9 +62,9 @@ export const Header = () => {
             <Drawer open={isOpen} onClose={() => setIsOpen(false)}>
                 <div className="flex flex-col space-y-2 p-4">
                     {navigation.map((item, index) => (
-                        <a key={index} href={`${link[index]}`} className="hover:border-b-2 border-black self-start">
-                            <p className='font-semibold text-sm'>{item}</p>
-                        </a>
+                        <Link key={index} href={`${link[index]}`} className="self-start">
+                            <p className='font-semibold text-lg'>{item}</p>
+                        </Link>
                     ))}
                 </div>
             </Drawer>

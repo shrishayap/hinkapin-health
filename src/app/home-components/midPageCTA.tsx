@@ -1,10 +1,11 @@
+import Link from "next/link";
 import { FaArrowCircleRight } from "react-icons/fa";
 
 export const MidPageCTA = () => {
 
     return (
-        <a href="/contact">
-            <div className='rounded-xl border p-3 md:p-8 bg-gradient-to-r from-red-600 to-orange-600 flex justify-between'>
+        <Link href="/contact">
+            <div className='w-full rounded-xl border p-3 md:p-8 bg-gradient-to-r from-red-600 to-orange-600 flex justify-between'>
 
                 <div>
                     <p className='text-white font-bold text-lg'>
@@ -19,7 +20,7 @@ export const MidPageCTA = () => {
                     <FaArrowCircleRight className='w-8 h-8 lg:w-10 lg:h-10 text-white'/>
                 </div>
             </div>
-        </a>
+        </Link>
     )
 }
 

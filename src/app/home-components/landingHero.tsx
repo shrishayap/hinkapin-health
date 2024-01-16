@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import howItWorks from "@/../public/heroGraphic.png"
 import ProcedureSearchBar from '@/components/procedureSearchBar';
+import Link from 'next/link';
 
 export const LandingHero = () => {
     return (
@@ -11,9 +12,9 @@ export const LandingHero = () => {
                     <h1 className="text-6xl font-medium font-serif text-white">Reimagining single cost bundled health care</h1>
                     <p className="text-white">Upfront pricing. Transparency. Quality healthcare. We work hard with our team of care providers to give you the best treatment at a fair price. No surprises. No gimmicks. </p>
                     <ProcedureSearchBar />
-                    <a href="/contact">
+                    <Link href="/contact">
                         <button className="text-white rounded-md p-2 font-semibold w-full border-2">Or, contact us for concierge service</button>
-                    </a>
+                    </Link>
                 </div>
                 <Image className="hidden lg:block w-1/2" src={howItWorks} alt="Hinkapin Health" />
             </div>

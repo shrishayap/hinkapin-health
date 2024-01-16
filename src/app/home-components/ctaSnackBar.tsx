@@ -5,6 +5,7 @@ import { IoMdClose } from "react-icons/io";
 
 
 import { useState } from "react";
+import Link from 'next/link';
 
 
 export const CTASnackBar = () => {
@@ -37,12 +38,12 @@ export const CTASnackBar = () => {
         >
 
 
-            <a href='/contact'>
+            <Link href='/contact'>
                 <div className="flex flex-col">
                     <p className='text-lg font-bold'>Bundled cash price surgery</p>
                     <p>Click to contact us today</p>
                 </div>
-            </a>
+            </Link>
         </Snackbar>
 
 

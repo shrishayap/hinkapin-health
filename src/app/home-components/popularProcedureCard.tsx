@@ -2,6 +2,7 @@ import * as React from 'react';
 import Image, { StaticImageData } from 'next/image';
 import Button from "@mui/joy/Button/Button";
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
+import Link from 'next/link';
 
 interface PopularProcedureCardProps {
     name: string;
@@ -18,9 +19,11 @@ export const PopularProcedureCard = ({ name, price, icon, href }: PopularProcedu
             </div>
             <Image alt={name} src={icon} width={50} height={50} />
             <p className="text-2xl font-bold font-serif">{price}</p>
-            <Button endDecorator={<KeyboardArrowRight />} variant="outlined" component="a" color='neutral' href={href}>
-                Learn More
-            </Button>
+            <Link href={href}>
+                <Button endDecorator={<KeyboardArrowRight />} variant="outlined" color='neutral' >
+                    Learn More
+                </Button>
+            </Link>
         </div>
     )
 }

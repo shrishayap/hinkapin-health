@@ -10,6 +10,7 @@ import StarIcon from '@mui/icons-material/Star';
 import TimerIcon from '@mui/icons-material/Timer';
 import { Divider, Button } from '@mui/joy';
 import { amber, red, grey } from '@mui/material/colors';
+import Link from 'next/link';
 
 interface DoctorCardProps {
     doctorData: {
@@ -33,7 +34,7 @@ interface DoctorCardProps {
     procedureUUID?: string | null
 }
 
-export const DoctorCard: React.FC<DoctorCardProps> = ({ doctorData, procedureUUID =  null}) => {
+export const DoctorCard: React.FC<DoctorCardProps> = ({ doctorData, procedureUUID = null }) => {
 
     //add defensive coding checking for doctorName
     let doctorName = "";
@@ -59,12 +60,6 @@ export const DoctorCard: React.FC<DoctorCardProps> = ({ doctorData, procedureUUI
     let imageURL = 'https://firebasestorage.googleapis.com/v0/b/hinkapin-health.appspot.com/o/doctorImages%2F'
     imageURL += doctorData["UUID"];
     imageURL += ".jpeg?alt=media";
-
-    let link = `/doctors/${doctorData['UUID']}`
-    if (procedureUUID) {
-        link += `?procedureUUID=${procedureUUID}`
-    }
-
 
 
     return (
@@ -112,9 +107,14 @@ export const DoctorCard: React.FC<DoctorCardProps> = ({ doctorData, procedureUUI
                 </CardContent>
 
 
-                <Button variant="outlined" color="neutral" href={link} component='a'>
-                    Learn More
-                </Button>
+                <Link href={{
+                    pathname: `/doctors/${doctorData['UUID']}`,
+                    query: { procedureUUID: procedureUUID }
+                }}>
+                    <Button variant="outlined" color="neutral" className='w-full'>
+                        Learn More
+                    </Button>
+                </Link>
 
             </Card>
         </>
