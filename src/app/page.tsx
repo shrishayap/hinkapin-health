@@ -5,6 +5,7 @@ import Header from '@/components/header';
 import HowItWorksSection from './home-components/howItWorksSection';
 import MidPageCTA from './home-components/midPageCTA';
 import CTASnackBar from './home-components/ctaSnackBar';
+import HinkapinHealthDemo from './home-components/hinkapinHealthDemo';
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
             <SurgeryCategorySection />
           </div>
           <MidPageCTA />
+          <HinkapinHealthDemo />
           <div id="howItWorks">
             <HowItWorksSection />
           </div>
