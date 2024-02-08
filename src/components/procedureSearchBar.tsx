@@ -25,7 +25,6 @@ export const ProcedureSearchBar = ({ size = 'lg' }: ProcedureSearchBarProps) => 
                 setLoading(true)
                 const matching = await getSearchQeury(searchTerm)
                 matching && setOptions(matching)
-
                 setLoading(false)
             }
         }
@@ -35,6 +34,7 @@ export const ProcedureSearchBar = ({ size = 'lg' }: ProcedureSearchBarProps) => 
 
 
     return (
+
         < Autocomplete
             className='flex-grow'
             freeSolo
@@ -51,7 +51,7 @@ export const ProcedureSearchBar = ({ size = 'lg' }: ProcedureSearchBarProps) => 
             endDecorator={
                 loading && <CircularProgress size="sm" />
             }
-            getOptionLabel={(option) => option.name}
+            getOptionLabel={(option) => option.name + option.description}
             renderOption={
                 (props, option) => (
                     <AutocompleteOption {...props} key={option.uuid}>
@@ -65,6 +65,9 @@ export const ProcedureSearchBar = ({ size = 'lg' }: ProcedureSearchBarProps) => 
                 )
             }
         />
+
+
+
     )
 }
 
