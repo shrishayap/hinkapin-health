@@ -8,7 +8,7 @@ import { IoTimeOutline } from "react-icons/io5";
 export const ContactInfo = () => {
 
     return (
-        <div className='flex flex-col space-y-3 bg-gradient-to-r from-red-600 to-orange-600 text-white p-3 md:p-8 rounded-xl'>
+        <div className='flex flex-col space-y-3 bg-gradient-to-r from-indigo-500 to-blue-500 text-white p-3 md:p-8 rounded-xl'>
             <p className='text-2xl font-serif font-bold'>Hinkapin Health</p>
             <p>Contact us today to get personal concierge services and get your primary consultation booked. Get started by contacting us via email, phone, or by filling out the form. We look forward to hearing from you!</p>
 

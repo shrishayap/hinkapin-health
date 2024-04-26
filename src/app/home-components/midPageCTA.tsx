@@ -5,7 +5,7 @@ export const MidPageCTA = () => {
 
     return (
         <Link href="/contact">
-            <div className='w-full rounded-xl border p-3 md:p-8 bg-gradient-to-r from-red-600 to-orange-600 flex justify-between'>
+            <div className='w-full rounded-xl border p-3 md:p-8 bg-gradient-to-r from-indigo-500 to-blue-500 flex justify-between'>
 
                 <div>
                     <p className='text-white font-bold text-lg'>

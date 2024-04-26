@@ -64,7 +64,7 @@ const ProcedurePriceTable: React.FC<ProcedurePriceTableProps> = ({ category }) =
                             <div className='w-full hover:bg-slate-100 px-2 py-1 border-b' key={data.uuid}>
                                 <Link href={`/procedures/${data.uuid}`} className='w-full flex flex-row justify-between'>
                                     <p>{data.name}</p>
-                                    {typeof data.price === 'number' ? <p>${data.price.toFixed(2)}</p> : <p>{data.price}</p>}
+                                    {typeof data.price === 'number' ? <p>${(data.price * 0.9).toFixed(2)} - ${(data.price * 1.1).toFixed(2)}</p> : <p>{data.price}</p>}
                                 </Link>
                             </div>
                         ))}
