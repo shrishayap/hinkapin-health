@@ -13,16 +13,6 @@ export const HowItWorkSection = () => {
                 <InfoCard number={3} title="Diagnosis Session with Physician" content="All options are discussed and end to end care coordination will be set up. Case manager will create a detailed plan including the bundled fee and the schedule. If you decide to go through with the bundled procedure, the diagnosis fee will be deducted from the final bundled fee" image='https://images.pexels.com/photos/5214997/pexels-photo-5214997.jpeg' />
                 <InfoCard number={4} title="Treatment" content="Once you make the upfront bundled payment, the care coordinator will walk you through all the steps and book all your appointments for you. All aspects including pre and post-surgery care is coordinated and no additional payments need to be made! No more dealing with confusing insurance lingo and chasing down medicine from dozens of locations." image='https://images.unsplash.com/photo-1551601651-2a8555f1a136?q=80&w=2947&auto=format&fit=crop' />
             </div>
-            <Divider> Or, watch Dr. Kikkeri explain it </Divider>
-
-            <div className='flex justify-center'>
-                <iframe
-                    className='w-full aspect-video rounded-xl'
-                    src="https://www.youtube.com/embed/fGnDiZoANxE?si=irqkmTPtWSyxbDzO"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen>
-                </iframe>
-            </div>
         </div>
     )
 }
