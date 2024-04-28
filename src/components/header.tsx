@@ -6,7 +6,7 @@ import { IoMenu } from "react-icons/io5";
 import { IoSearch } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ProcedureSearchBar from '@/components/procedureSearchBar';
 
 export const Header = () => {
@@ -15,6 +15,27 @@ export const Header = () => {
 
     const navigation = ['Popular', 'Categories', 'How it Works', 'Contact'];
     const link = ['/#popularProcedures', '/#surgeryCategory', '/#howItWorks', '/contact']
+
+    const [orgName, setOrgName] = useState(null);
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            setLoading(true);
+            const data = await fetch('/api/getOrgData');
+            if (data === null) {
+                setOrgName(null);
+                setLoading(false);
+                return;
+            }
+            const jsonData = await data.json();
+            setOrgName(jsonData["data"]["org_name"]);
+            setLoading(false);
+            return;
+        };
+
+        fetchData();
+    }, [])
 
     if (searchOnly) return (
         <nav className="flex justify-center p-2 md:p-4 bg-white border-b-2">
@@ -34,7 +55,7 @@ export const Header = () => {
             <div className='w-full max-w-[1200px] flex space-x-5 justify-between'>
 
                 <Link href='/'>
-                    <h1 className="text-2xl font-bold font-serif">Hinkapin Health</h1>
+                    <h1 className="text-2xl font-bold font-serif"> {loading ? " " : orgName} </h1>
                 </Link>
 
                 <div className='hidden md:flex md:flex-grow'>

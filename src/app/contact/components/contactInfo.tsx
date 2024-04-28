@@ -4,12 +4,17 @@ import { IoLocationOutline } from "react-icons/io5";
 import { IoTimeOutline } from "react-icons/io5";
 
 
+interface ContactInfoProps {
+    orgName: string;
+    email: string;
+    phone: string;
+    address: string;
+}
 
-export const ContactInfo = () => {
-
+export const ContactInfo = ({ orgName, email, phone, address }: ContactInfoProps) => {
     return (
         <div className='flex flex-col space-y-3 bg-gradient-to-r from-indigo-500 to-blue-500 text-white p-3 md:p-8 rounded-xl'>
-            <p className='text-2xl font-serif font-bold'>Hinkapin Health</p>
+            <p className='text-2xl font-serif font-bold'>{orgName}</p>
             <p>Contact us today to get personal concierge services and get your primary consultation booked. Get started by contacting us via email, phone, or by filling out the form. We look forward to hearing from you!</p>
 
 
@@ -17,7 +22,7 @@ export const ContactInfo = () => {
                 <MdOutlineMail className='w-6 h-6' />
                 <div className='flex flex-col'>
                     <p className='font-bold'>Email</p>
-                    <p>info@hinkapinhealth.com</p>
+                    <p>{email}</p>
                 </div>
             </div>
 
@@ -25,7 +30,7 @@ export const ContactInfo = () => {
                 <FiPhone className='w-6 h-6' />
                 <div className='flex flex-col'>
                     <p className='font-bold'>Phone</p>
-                    <p>+1 (888) 850 0711</p>
+                    <p>{phone}</p>
                 </div>
             </div>
 
@@ -33,7 +38,7 @@ export const ContactInfo = () => {
                 <IoLocationOutline className='w-6 h-6' />
                 <div className='flex flex-col'>
                     <p className='font-bold'>Address</p>
-                    <p>3865 Childress Ave Ste C Mesquite TX 75150</p>
+                    <p>{address}</p>
                 </div>
             </div>
 

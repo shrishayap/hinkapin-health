@@ -4,7 +4,11 @@ import Input from '@mui/joy/Input';
 import FormControl from '@mui/joy/FormControl';
 import Textarea from '@mui/joy/Textarea';
 
-export const GeneralContactForm = () => {
+interface GeneralContactFormProps {
+    orgName: string;
+}
+
+export const GeneralContactForm = ({ orgName }: GeneralContactFormProps) => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
@@ -14,7 +18,7 @@ export const GeneralContactForm = () => {
     return (
         <div className='flex flex-col space-y-2 bg-gradient-to-r from-slate-900 to-slate-700 p-3 md:p-8 rounded-xl'>
 
-            <p className='text-white text-lg font-bold'>Contact Hinkapin Health today</p>
+            <p className='text-white text-lg font-bold'>Contact {orgName} today</p>
 
             <div className='grid grid-cols-2 gap-2'>
 
