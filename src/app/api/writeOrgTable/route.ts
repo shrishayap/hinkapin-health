@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
  
 export async function GET(request: Request) {
 
-    return NextResponse.json("Not allowed", { status: 200 });
+  return NextResponse.json("Done", { status: 200 });
   try {
     await sql`INSERT INTO Organization (
         Org_Seq_no,
