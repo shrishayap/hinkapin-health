@@ -1,6 +1,5 @@
 "use client";
 
-import ListDoctors from '@/app/categories/components/listDoctors';
 import PopularProcedureSection from '@/app/home-components/popularProcedureSection';
 import SurgeryCategorySection from '@/app/home-components/surgeryCategorySection';
 import Header from '@/components/header';
@@ -8,8 +7,8 @@ import Divider from '@mui/joy/Divider';
 import { notFound } from 'next/navigation';
 import * as React from 'react';
 import ProcedureExplainCard from '../components/procedureExplainCard';
-import { getProcedureData } from './ajax';
 import DoctorCardSkeleton from '@/app/categories/components/doctorCardSkeleton';
+import ProcedureContactForm from '../components/procedureContactForm';
 
 
 export default function Page({ params }: { params: { uuid: string } }) {
@@ -18,10 +17,13 @@ export default function Page({ params }: { params: { uuid: string } }) {
 
     const [loading, setLoading] = React.useState(true);
     const [err404, setErr404] = React.useState(false);
-    const [category, setCategory] = React.useState('all');
-    const [name, setName] = React.useState(null);
-    const [description, setDescription] = React.useState(null);
-    const [price, setPrice] = React.useState(null);
+
+    const [name, setName] = React.useState('');
+    const [description, setDescription] = React.useState('');
+    const [price, setPrice] = React.useState(0);
+    const [range, setRange] = React.useState(0);
+    const [locations, setLocations] = React.useState(['Dallas, TX', 'Austin, TX']);
+
 
 
     React.useEffect(() => {
@@ -30,16 +32,18 @@ export default function Page({ params }: { params: { uuid: string } }) {
 
             setLoading(true);
 
-            const data = await getProcedureData(uuid);
-            if (data === null) {
+            const packet = await fetch(`/api/procedureData?uuid=${uuid}`);
+            if (packet.status === 404) {
                 setErr404(true);
             } else {
-                setCategory(data.category);
+                const jsonData = await packet.json();
+                const data = jsonData["data"];
                 setName(data.name);
                 setDescription(data.description);
-                setPrice(data.price);
+                setPrice(data.cost);
+                setRange(data.percentage);
+                setLocations(data.locations);
             }
-
             setLoading(false);
             return;
         };
@@ -73,13 +77,10 @@ export default function Page({ params }: { params: { uuid: string } }) {
 
                 {!loading &&
                     <>
-                        <ProcedureExplainCard name={name} price={price} description={description} />
-
-                        <div className='flex flex-col space-y-2 '>
-                            <p className='text-xl font-bold'>Doctors for {name}</p>
-                            <ListDoctors category={category} title={false} procedureUUID={uuid}/>
+                        <div className='grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4'>
+                            <ProcedureExplainCard name={name} price={price} description={description} range={range} locations={locations}/>
+                            <ProcedureContactForm procedureName={name} />
                         </div>
-
                         <Divider>OR</Divider>
                         <PopularProcedureSection />
                         <SurgeryCategorySection />

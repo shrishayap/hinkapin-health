@@ -1,65 +1,26 @@
 'use client'
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import Input from '@mui/joy/Input';
 import FormControl from '@mui/joy/FormControl';
 import Textarea from '@mui/joy/Textarea';
-import Select from '@mui/joy/Select';
-import Option from '@mui/joy/Option';
-import { getProcedurePrices } from '@/app/categories/[category]/ajax';
 
-interface DoctorContactFormProps {
-    doctorPrefix: string,
-    doctorFirstName: string,
-    doctorLastName: string,
-    doctorCategory: string
+interface ProcedureContactFormProps {
+    procedureName: string;
 }
 
-export const DoctorContactForm = ({ doctorPrefix, doctorFirstName, doctorLastName, doctorCategory }: DoctorContactFormProps) => {
+export const ProcedureContactForm = ({ procedureName }: ProcedureContactFormProps) => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
     const [message, setMessage] = useState('');
-    const [procedureChoices, setProcedureChoices] = useState<any[]>([]);
-    const [selectedProcedure, setSelectedProcedure] = useState<string | null>(null);
-
-    //check to see if there are any parameters that match ?procedureUUID= in the url
-    //if so, set the selectedProcedure to that uuid
-    useEffect(() => {
-        const urlParams = new URLSearchParams(window.location.search);
-        const procedureUUID = urlParams.get('procedureUUID');
-        if (procedureUUID) {
-            setSelectedProcedure(procedureUUID);
-        }
-    }, []);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            const data = await getProcedurePrices(doctorCategory)
-            if (data === null) {
-                setProcedureChoices([]);
-                return;
-            }
-            setProcedureChoices(data.procedures);
-        };
-
-        fetchData();
-    }, []);
-
-    const handleChange = (
-        event: React.SyntheticEvent | null,
-        newValue: string | null,
-    ) => {
-        setSelectedProcedure(newValue);
-    };
 
 
     return (
         <div className='flex flex-col space-y-2 bg-gradient-to-r from-slate-900 to-slate-700 p-4 md:p-8 rounded-xl'>
 
-            <p className='text-white text-lg font-bold'>Schedule an appointment with {doctorPrefix} {doctorFirstName} {doctorLastName}</p>
+            <p className='text-white text-lg font-bold'>Schedule a consultation for {procedureName}</p>
             <p className='text-white'>Fill the form below to connect with our concierge team and get a primary consultation booked.</p>
-
 
             <div className='grid grid-cols-2 gap-2'>
 
@@ -106,21 +67,6 @@ export const DoctorContactForm = ({ doctorPrefix, doctorFirstName, doctorLastNam
             </FormControl>
 
             <FormControl>
-                <p className='text-white'>Select Procedure</p>
-                <Select
-                    placeholder='Select Procedure'
-                    value={selectedProcedure}
-                    onChange={handleChange}
-                >
-                    {procedureChoices.map(procedure => {
-                        return (
-                            <Option key={procedure.uuid} value={procedure.uuid}>{procedure.name}</Option>
-                        );
-                    })}
-                </Select>
-            </FormControl>
-
-            <FormControl>
                 <p className='text-white'>Message</p>
                 <Textarea
                     required
@@ -140,4 +86,4 @@ export const DoctorContactForm = ({ doctorPrefix, doctorFirstName, doctorLastNam
     );
 };
 
-export default DoctorContactForm;
+export default ProcedureContactForm;

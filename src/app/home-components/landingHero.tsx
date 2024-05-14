@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const LandingHero = () => {
     return (
-        <div className='rounded-xl border p-3 md:p-8 bg-gradient-to-r from-indigo-500 to-blue-500'>
+        <div className='rounded-xl border p-3 md:p-8 bg-gradient-to-r from-indigo-700 to-blue-700'>
             <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:space-x-10">
                 <div className="flex flex-col space-y-4 w-full lg:w-1/2">
                     <h1 className="text-6xl font-medium font-serif text-white">Reimagining single cost bundled health care</h1>
