@@ -20,7 +20,9 @@ export const PopularProcedureCard = ({ id, icon }: PopularProcedureCardProps) =>
     const formatter = new Intl.NumberFormat('en-US', {
         style: 'currency',
         currency: 'USD',
-      });
+        maximumFractionDigits: 0,
+        minimumFractionDigits: 0,
+    });
 
     useEffect(() => {
         const fetchData = async () => {
@@ -35,11 +37,11 @@ export const PopularProcedureCard = ({ id, icon }: PopularProcedureCardProps) =>
 
         fetchData();
     }, [id])
-    
+
     return (
         <div className="flex flex-col items-center space-y-4 p-4 border-2 rounded-lg justify-end bg-white hover">
             <div className='h-full'>
-                <h2 className="text-center overflow-wrap">{name}</h2> 
+                <h2 className="text-center overflow-wrap">{name}</h2>
             </div>
             <Image alt={name} src={icon} width={50} height={50} />
             <div className='flex flex-col items-center space-y-0'>

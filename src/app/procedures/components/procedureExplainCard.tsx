@@ -17,7 +17,7 @@ export const ProcedureExplainCard = ({ name, description, price, range, location
     });
 
     return (
-        <div className='flex flex-col space-y-2 p-3 md:p-8 rounded-xl text-black border-2 border-black'>
+        <div className='flex flex-col space-y-2 p-3 md:p-8 rounded-xl text-black border-2 bg-white'>
             <p className='text-2xl font-bold'>{name}</p>
             <p><span className='font-bold'>Description: </span>{description ? description : 'Not available'}</p>
             <p><span className='font-bold'>Price: </span> {price ? <span>{formatter.format(price)} - {formatter.format(price * (1 + range / 100))}</span> : 'Please call for price'}</p>
