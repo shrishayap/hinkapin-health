@@ -20,7 +20,7 @@ export const SurgeryCategorySection = () => {
         <div className='flex flex-col space-y-3'>
             <h3 className='text-xl font-bold'>Search Procedures by Category</h3>
             <div className='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-2 sm:gap-3 overflow-auto'>
-                <CategoryCard name='All specialists' icon={doctorsIcon} href='/categories/all' />
+                <CategoryCard name='All Procedures' icon={doctorsIcon} href='/categories/all' />
                 <CategoryCard name='Colorectal' icon={colonIcon} href='/categories/colorectal' />
                 <CategoryCard name='Ear, Nose & Throat' icon={entIcon} href='/categories/ent' />
                 <CategoryCard name='Gastroenterology' icon={stomachIcon} href='/categories/gastro' />

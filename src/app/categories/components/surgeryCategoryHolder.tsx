@@ -24,7 +24,7 @@ const SurgeryCategoryHolder: React.FC<SurgeryCategoryHolderProps> = ({
 
     return (
         <div className="flex flex-row overflow-x-auto md:space-x-2 lg:justify-between">
-            <SurgeryCategory title='All Specialists' svg={doctorsIcon} link='/categories/all' isSelected={category === 'all'}/>
+            <SurgeryCategory title='All Procedures' svg={doctorsIcon} link='/categories/all' isSelected={category === 'all'}/>
             <SurgeryCategory title='Colorectal' svg={colonIcon} link='/categories/colorectal' isSelected={category === "colorectal"}/>
             <SurgeryCategory title='ENT' svg={entIcon} link='/categories/ent' isSelected={category === 'ent'} />
             <SurgeryCategory title='Gastro' svg={stomachIcon} link='/categories/gastro' isSelected={category === 'gastro'}/>
