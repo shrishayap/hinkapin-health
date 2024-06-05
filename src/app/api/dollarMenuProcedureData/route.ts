@@ -13,15 +13,15 @@ export async function GET(request: { nextUrl: { searchParams: any; }; }) {
   try {
     const result =
       await sql`
-            SELECT * FROM procedures WHERE id = ${id}
+            SELECT * FROM procedures_new WHERE id = ${id}
             `;
     const data = await result.rows;
 
     const procedure = data.map((procedureData: any) => {
       return (
         {
-          name: procedureData.name,
-          price: procedureData.cost,
+          name: procedureData.medical_name,
+          price: procedureData.price,
         }
       )
     });

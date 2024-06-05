@@ -15,7 +15,7 @@ export const ContactInfo = ({ orgName, email, phone, address }: ContactInfoProps
     return (
         <div className='flex flex-col space-y-3 p-3 md:p-8 rounded-xl border-2 border-black'>
             <p className='text-2xl font-serif font-bold'>{orgName}</p>
-            <p>Contact us today to get personal concierge services and get your primary consultation booked. Get started by contacting us via email, phone, or by filling out the form. We look forward to hearing from you!</p>
+            <p>Contact us today to get personal patient care coordination services and get your primary consultation booked. Get started by contacting us via email, phone, or by filling out the form. We look forward to hearing from you!</p>
 
 
             <div className='items-center flex space-x-1'>

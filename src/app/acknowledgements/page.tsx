@@ -12,6 +12,8 @@ export function Page() {
                 <h1 className='text-2xl font-bold'>Acknowledgements</h1>
                 <a href='vecteezy.com' title='Vecteezy'>Hero Image from Vecteezy</a>
                 <a href="https://www.flaticon.com/free-icons/gallbladder" title="gallbladder icons">Gallbladder icons created by Eucalyp - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/eye" title="eye icons">Eye icons created by Kiranshastry - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/heart" title="heart icons">Heart icons created by Freepik - Flaticon</a>
                 <a href="https://www.flaticon.com/free-icons/stomach" title="stomach icons">Stomach icons created by iconixarPro - Flaticon</a>
                 <a href="https://www.flaticon.com/free-icons/inguinal-hernia" title="inguinal hernia icons">Inguinal hernia icons created by Freepik - Flaticon</a>
                 <a href="https://www.flaticon.com/free-icons/kidney-stone" title="kidney stone icons">Kidney stone icons created by Freepik - Flaticon</a>

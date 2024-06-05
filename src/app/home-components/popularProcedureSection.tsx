@@ -13,12 +13,12 @@ export const PopularProcedureSection = () => {
         <div className='flex flex-col space-y-3'>
             <h3 className='text-xl font-bold'>View Popular Surgeries</h3>
             <div className='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-2 sm:gap-3 overflow-auto'>
-                <PopularProcedureCard id={1} icon={colonIcon}/>
-                <PopularProcedureCard id={21} icon={gallBladderIcon} />
-                <PopularProcedureCard id={25} icon={herniaIcon} />
-                <PopularProcedureCard id={115} icon={kidneyStoneIcon} />
-                <PopularProcedureCard id={8} icon={tonsilIcon} />
-                <PopularProcedureCard id={43} icon={motherIcon}  />
+                <PopularProcedureCard id={26} icon={colonIcon}/>
+                <PopularProcedureCard id={53} icon={gallBladderIcon} />
+                <PopularProcedureCard id={55} icon={herniaIcon} />
+                <PopularProcedureCard id={155} icon={kidneyStoneIcon} />
+                <PopularProcedureCard id={34} icon={tonsilIcon} />
+                <PopularProcedureCard id={69} icon={motherIcon}  />
             </div>
         </div>
 

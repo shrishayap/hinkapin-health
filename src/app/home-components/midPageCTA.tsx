@@ -12,7 +12,7 @@ export const MidPageCTA = () => {
                         Single cost. Upfront pricing. Bundled.
                     </p>
                     <p className='text-white '>
-                        Click to contact us today! Work with a concierge and get a consultation booked.
+                        Click to contact us today! Work with a patient care coordinator and get a consultation booked.
                     </p>
                 </div>
                 <div className='flex flex-col justify-center'>

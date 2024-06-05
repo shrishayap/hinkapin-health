@@ -3,13 +3,11 @@ import Button from "@mui/joy/Button/Button";
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import Link from 'next/link';
 
-interface ProcedureCardProps {
+interface SpecialProcedureCardProps {
     name: string;
-    price: number;
-    id: number;
 }
 
-export const ProcedureCard = ({ name, price, id }: ProcedureCardProps) => {
+export const SpecialProcedureCard = ({ name }: SpecialProcedureCardProps) => {
 
     const formatter = new Intl.NumberFormat('en-US', {
         style: 'currency',
@@ -23,18 +21,14 @@ export const ProcedureCard = ({ name, price, id }: ProcedureCardProps) => {
             <div className='h-full'>
                 <h2 className="text-center overflow-wrap">{name}</h2> 
             </div>
-            <div className='flex flex-col items-center space-y-0'>
-                <p className="text-sm font-serif">Starting from</p>
-                <p className="text-2xl font-bold font-serif">{formatter.format(price)}</p>
-            </div>
 
-            <Link href={`/procedures/${id}`}>
+            <Link href={`/contact}`}>
                 <Button endDecorator={<KeyboardArrowRight />} variant="outlined" color='neutral' >
-                    Learn More
+                    Contact us to learn more
                 </Button>
             </Link>
         </div>
     )
 }
 
-export default ProcedureCard;
+export default SpecialProcedureCard;

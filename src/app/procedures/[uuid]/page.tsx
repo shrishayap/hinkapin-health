@@ -18,10 +18,11 @@ export default function Page({ params }: { params: { uuid: string } }) {
     const [loading, setLoading] = React.useState(true);
     const [err404, setErr404] = React.useState(false);
 
-    const [name, setName] = React.useState('');
+    const [medicalName, setMedicalName] = React.useState('');
+    const [commonName, setCommonName] = React.useState('');
+    const [cptCode, setCptCode] = React.useState('');
     const [description, setDescription] = React.useState('');
     const [price, setPrice] = React.useState(0);
-    const [range, setRange] = React.useState(0);
     const [locations, setLocations] = React.useState(['Dallas, TX', 'Austin, TX']);
 
 
@@ -38,10 +39,11 @@ export default function Page({ params }: { params: { uuid: string } }) {
             } else {
                 const jsonData = await packet.json();
                 const data = jsonData["data"];
-                setName(data.name);
+                setMedicalName(data.medical_name);
+                setCommonName(data.common_name);
+                setCptCode(data.cpt_code);
                 setDescription(data.description);
-                setPrice(data.cost);
-                setRange(data.percentage);
+                setPrice(data.price);
                 setLocations(data.locations);
             }
             setLoading(false);
@@ -78,8 +80,8 @@ export default function Page({ params }: { params: { uuid: string } }) {
                 {!loading &&
                     <>
                         <div className='grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4'>
-                            <ProcedureExplainCard name={name} price={price} description={description} range={range} locations={locations}/>
-                            <ProcedureContactForm procedureName={name} />
+                            <ProcedureExplainCard medicalName={medicalName} commonName={commonName} cptCode={cptCode} price={price} description={description} locations={locations}/>
+                            <ProcedureContactForm procedureName={medicalName} />
                         </div>
                         <Divider>OR</Divider>
                         <PopularProcedureSection />

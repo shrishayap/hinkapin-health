@@ -8,7 +8,7 @@ export async function GET(request: { nextUrl: { searchParams: any; }; }) {
     try {
         const result =
             await sql`
-            SELECT * FROM procedures WHERE id = ${uuid}
+            SELECT * FROM procedures_new WHERE id = ${uuid}
             `;
         const data = await result.rows[0];
         if (!data) {

@@ -5,11 +5,19 @@ import { Divider } from '@mui/joy';
 import Header from '../../../components/header';
 import SurgeryCategoryHolder from '../components/surgeryCategoryHolder';
 import ProcedureCardHolder from '../components/procedureCardHolder';
+import { notFound } from 'next/navigation';
 
 
 export default function Page({ params }: { params: { category: string } }) {
 
     let category = params.category;
+
+    //if category not part of   const validCategories = ['cardiovascular', 'colorectal', 'ent', 'gastro', 'general', 'gynecology', 'eyes', 'orthopedic', 'pain-management', 'spine', 'podiatry', 'urology'];, return 404
+
+    const validCategories = ['cardiovascular', 'colorectal', 'ent', 'gastro', 'general', 'gynecology', 'eyes', 'orthopedic', 'pain-management', 'spine', 'podiatry', 'urology'];
+    if (!validCategories.includes(category)) {
+        return notFound();
+    }
 
 
     return (

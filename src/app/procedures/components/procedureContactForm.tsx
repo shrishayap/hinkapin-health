@@ -20,7 +20,7 @@ export const ProcedureContactForm = ({ procedureName }: ProcedureContactFormProp
         <div className='flex flex-col space-y-2 bg-gradient-to-r from-slate-900 to-slate-700 p-4 md:p-8 rounded-xl'>
 
             <p className='text-white text-lg font-bold'>Schedule a consultation for {procedureName}</p>
-            <p className='text-white'>Fill the form below to connect with our concierge team and get a primary consultation booked.</p>
+            <p className='text-white'>Fill the form below to connect with our patient care coordination team and get a primary consultation booked.</p>
 
             <div className='grid grid-cols-2 gap-2'>
 
