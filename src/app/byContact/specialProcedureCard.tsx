@@ -22,7 +22,7 @@ export const SpecialProcedureCard = ({ name }: SpecialProcedureCardProps) => {
                 <h2 className="text-center overflow-wrap">{name}</h2> 
             </div>
 
-            <Link href={`/contact}`}>
+            <Link href={`/contact`}>
                 <Button endDecorator={<KeyboardArrowRight />} variant="outlined" color='neutral' >
                     Contact us to learn more
                 </Button>
