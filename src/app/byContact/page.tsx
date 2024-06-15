@@ -18,16 +18,12 @@ export function Page() {
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-3'>
 
                     <SpecialProcedureCard name='Bariatric' />
-                    <SpecialProcedureCard name='Brachytherapy' />
-                    <SpecialProcedureCard name='Chiropractor' />
                     <SpecialProcedureCard name='Dermatology' />
+                    <SpecialProcedureCard name='Pediatrics' />
                     <SpecialProcedureCard name='Dental/ Oral/ Maxofacial' />
-                    <SpecialProcedureCard name='Dialysis Access' />
                     <SpecialProcedureCard name='Hand Surgery' />
-                    <SpecialProcedureCard name='Neurology' />
                     <SpecialProcedureCard name='Occuloplastic' />
-                    <SpecialProcedureCard name='Wound Care' />
-                    <SpecialProcedureCard name='Plastic Surgery - Gynocomastia' />
+                    <SpecialProcedureCard name='Plastic Surgery' />
                 </div>
 
             </div>

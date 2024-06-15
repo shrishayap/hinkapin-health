@@ -31,13 +31,11 @@ export const ProcedureDisclaimer = () => {
                                     <li>Transportation</li>
                                     <li>Pre-Operative Imaging - CT, MRI, etc</li>
                                     <li>Diagnostic Labs</li>
-                                    <li>Implants and Prosthesis*</li>
                                     <li>Management of Complications</li>
                                     <li>Postoperative Medications</li>
                                     <li>Additional Specialist Consultation if needed</li>
                                 </ul>
                             </div>
-
 
                             <p className='font-light text-xs'>
                                 *May vary on a case-by-case basis, as determined by the surgeon at the time of consultation.

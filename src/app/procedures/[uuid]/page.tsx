@@ -9,6 +9,7 @@ import * as React from 'react';
 import ProcedureExplainCard from '../components/procedureExplainCard';
 import DoctorCardSkeleton from '@/app/categories/components/doctorCardSkeleton';
 import ProcedureContactForm from '../components/procedureContactForm';
+import { set } from 'firebase/database';
 
 
 export default function Page({ params }: { params: { uuid: string } }) {
@@ -24,7 +25,7 @@ export default function Page({ params }: { params: { uuid: string } }) {
     const [description, setDescription] = React.useState('');
     const [price, setPrice] = React.useState(0);
     const [locations, setLocations] = React.useState(['Dallas, TX', 'Austin, TX']);
-
+    const [implantDisclaimer, setImplantDisclaimer] = React.useState(false);
 
 
     React.useEffect(() => {
@@ -45,6 +46,7 @@ export default function Page({ params }: { params: { uuid: string } }) {
                 setDescription(data.description);
                 setPrice(data.price);
                 setLocations(data.locations);
+                setImplantDisclaimer(data.implant_disclaimer);
             }
             setLoading(false);
             return;
@@ -80,7 +82,7 @@ export default function Page({ params }: { params: { uuid: string } }) {
                 {!loading &&
                     <>
                         <div className='grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4'>
-                            <ProcedureExplainCard medicalName={medicalName} commonName={commonName} cptCode={cptCode} price={price} description={description} locations={locations}/>
+                            <ProcedureExplainCard medicalName={medicalName} commonName={commonName} cptCode={cptCode} price={price} description={description} locations={locations} implantDisclaimer={implantDisclaimer}/>
                             <ProcedureContactForm procedureName={medicalName} />
                         </div>
                         <Divider>OR</Divider>

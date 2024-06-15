@@ -81,7 +81,7 @@ export const GeneralContactForm = ({ orgName }: GeneralContactFormProps) => {
 
             <button className='w-full text-white p-1 border-2 rounded-md'>Submit</button>
 
-            <p className='text-sm font-light text-white'>Do not submit any sensetive medical information</p>
+            <p className='text-sm font-bold text-white'>Do not submit any sensetive medical information</p>
 
         </div>
     );

@@ -18,14 +18,16 @@ export const ProcedureSearchBar = ({ size = 'lg' }: ProcedureSearchBarProps) => 
     const [searchTerm, setSearchTerm] = useState('')
     const [options, setOptions] = useState<any[]>([])
 
+
     useEffect(() => {
         const fetchData = async () => {
             setOptions([])
             if (searchTerm.length > 2) {
                 setLoading(true)
-                const matching = await getSearchQeury(searchTerm)
-                matching && setOptions(matching)
+                const matching = await getSearchQeury(searchTerm);
+                matching && setOptions(matching);
                 setLoading(false)
+                console.log(matching);
             }
         }
         fetchData();
@@ -51,13 +53,13 @@ export const ProcedureSearchBar = ({ size = 'lg' }: ProcedureSearchBarProps) => 
             endDecorator={
                 loading && <CircularProgress size="sm" />
             }
-            getOptionLabel={(option) => option.name + option.description}
+            getOptionLabel={(option) => option.medical_name}
             renderOption={
                 (props, option) => (
-                    <AutocompleteOption {...props} key={option.uuid}>
-                        <Link href={`/procedures/${option.uuid}`}>
+                    <AutocompleteOption {...props} key={option.id}>
+                        <Link href={`/procedures/${option.id}`}>
                             <div className='flex flex-col'>
-                                <p className='font-bold text-sm'>{option.name}</p>
+                                <p className='font-bold text-sm'>{option.medical_name}</p>
                                 <p className='font-light text-xs'>{option.description}</p>
                             </div>
                         </Link>

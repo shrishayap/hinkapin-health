@@ -10,9 +10,10 @@ interface ProcedureExplalinCardProps {
     description: string;
     price: number;
     locations: string[];
+    implantDisclaimer: boolean;
 }
 
-export const ProcedureExplainCard = ({ medicalName, commonName, cptCode, description, price, locations }: ProcedureExplalinCardProps) => {
+export const ProcedureExplainCard = ({ medicalName, commonName, cptCode, description, price, locations, implantDisclaimer }: ProcedureExplalinCardProps) => {
 
     const formatter = new Intl.NumberFormat('en-US', {
         style: 'currency',
@@ -31,6 +32,8 @@ export const ProcedureExplainCard = ({ medicalName, commonName, cptCode, descrip
             <div>
                 <p><span className='font-bold'>Price: </span> {price ? <span> Starting from {formatter.format(price)} </span> : 'Please call for price'}</p>
                 <p className='text-sm font-light'>Prices may vary by location.</p>
+                {implantDisclaimer && <p className='text-sm font-light'>*Implants and prosthesis price not included.</p>}
+
             </div>
 
 

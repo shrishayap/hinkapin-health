@@ -1,22 +1,29 @@
-import procedureData from '@/../public/data/procedures.json'
+
+import { sql } from '@vercel/postgres';
+import { NextResponse } from 'next/server';
 
 export async function GET(request: { nextUrl: { searchParams: any; }; }) {
     const { searchParams } = request.nextUrl;
-    let searchQuery = searchParams.get('query');
+    let searchQuery = searchParams.get('query').toLowerCase();
+    const queryWithPercent = `%${searchQuery}%`;
 
-    let results = [];
-    for (let category in procedureData) {
-        let matchingProcedures = procedureData[category].filter((procedure: any) =>
-            procedure.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            procedure.description.toLowerCase().includes(searchQuery.toLowerCase())
-        ).map((procedure: any) => ({
-            name: procedure.name,
-            description: procedure.description,
-            uuid: procedure.uuid,
-        }));
-
-        results.push(...matchingProcedures);
+    try {
+        const result =
+            await sql`
+            SELECT id, medical_name, description
+FROM procedures_new
+WHERE 
+     medical_name ILIKE ${queryWithPercent}
+   OR common_name ILIKE ${queryWithPercent}
+   OR description ILIKE ${queryWithPercent}
+   LIMIT 5;
+            `;
+        const data = await result.rows;
+        if (!data) {
+            return NextResponse.json({ error: 'Procedure not found' }, { status: 404 });
+        }
+        return NextResponse.json({ data }, { status: 200 });
+    } catch (error) {
+        return NextResponse.json({ error }, { status: 500 });
     }
-
-    return  Response.json(results);
 }
