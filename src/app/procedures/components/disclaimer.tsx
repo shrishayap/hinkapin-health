@@ -6,7 +6,7 @@ export const ProcedureDisclaimer = () => {
 
     return (
         <div>
-             <Accordion>
+             <Accordion expanded>
                     <AccordionSummary className='text-md font-bold'>Disclaimer</AccordionSummary>
                     <AccordionDetails>
 

@@ -50,8 +50,15 @@ export function Page() {
             <div className='max-w-[1200px] self-center px-2 flex flex-col space-y-4 pb-4'>
 
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4'>
-                    {orgData && <ContactInfo orgName={orgData["org_name"]} email={orgData["org_contact_email"]} phone={formatPhoneNumber(orgData["org_telno"])} address={getAddress()}/>}
-                    {orgData && <GeneralContactForm orgName={orgData["org_name"]}/>}
+                    {orgData && <ContactInfo orgName={orgData["org_name"]} email={orgData["org_contact_email"]} phone={formatPhoneNumber(orgData["org_telno"])} address={getAddress()} />}
+                    {orgData &&
+
+                        <div >
+                            <GeneralContactForm orgName={orgData["org_name"]} />
+                        </div>
+
+
+                    }
                 </div>
                 <HowItWorkSection />
 
