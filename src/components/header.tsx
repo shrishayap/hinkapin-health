@@ -13,8 +13,8 @@ export const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [searchOnly, setSearchOnly] = useState(false);
 
-    const navigation = ['Popular', 'Categories', 'How it Works', 'Payment Options', 'Contact'];
-    const link = ['/#popularProcedures', '/#surgeryCategory', '/#howItWorks',  '/#paymentOptions', '/contact']
+    const navigation = ['Popular', 'Categories', 'How it Works', 'Navigation', 'Contact'];
+    const link = ['/#popularProcedures', '/#surgeryCategory', '/#howItWorks', '/surgicalNavigation', '/contact']
 
     const [orgName, setOrgName] = useState(null);
     const [loading, setLoading] = useState(false);

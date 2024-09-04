@@ -1,9 +1,9 @@
 import React from 'react';
-import { MidPageCTA } from '../home-components/midPageCTA';
 import SurgicalNavSteps from './components/surgicalNavSteps';
 import WorkWithNav from './components/workWithNav';
 import CompareNav from './components/compareNav';
 import Header from '@/components/header';
+import SurgicalNavCTA from './components/surgicalNavCTA';
 
 const SurgicalNavigationPage = () => {
     return (
@@ -31,11 +31,7 @@ const SurgicalNavigationPage = () => {
 
                     <CompareNav />
 
-                    {/* CTA Section */}
-                    <section>
-                        <h2 className="text-2xl font-semibold mb-4">Ready to Get Started?</h2>
-                        <MidPageCTA />
-                    </section>
+                    <SurgicalNavCTA />
                 </div>
             </div>
         </div>
