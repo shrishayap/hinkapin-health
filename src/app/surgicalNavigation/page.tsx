@@ -18,7 +18,7 @@ const SurgicalNavigationPage = () => {
                         <h1 className="text-4xl font-bold mb-6">Surgical Navigation Solution</h1>
                         <h2 className="text-2xl font-semibold mb-4">What is Surgical Navigation?</h2>
                         <p className="mb-4">
-                            Hinkapin Health's Surgical Navigation Solution is an innovative service designed to enhance patient care, reduce healthcare costs, and improve overall client satisfaction. Our comprehensive solution offers a seamless process for surgical procedures, ensuring that patients receive the best care at the most affordable rates.
+                            Hinkapin Health&apos;s Surgical Navigation Solution is an innovative service designed to enhance patient care, reduce healthcare costs, and improve overall client satisfaction. Our comprehensive solution offers a seamless process for surgical procedures, ensuring that patients receive the best care at the most affordable rates.
                         </p>
                         <p>
                             Our solution simplifies the surgical process, from initial patient contact to postoperative support, providing personalized care coordination, cost-effective options, and quality assurance throughout the journey.
