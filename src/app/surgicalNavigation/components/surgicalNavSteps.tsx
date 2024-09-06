@@ -8,37 +8,37 @@ export default function SurgicalNavSteps() {
                 <InfoCard
                     title="Initial Patient Contact"
                     content="Patients can reach out to us as soon as surgery is recommended, allowing for proactive engagement."
-                    image="https://images.unsplash.com/photo-1520923642038-b4259acecbd7"
+                    image="/navigation-photos/phone.jpeg"
                     number={1}
                 />
                 <InfoCard
                     title="Personalized Care Coordination"
                     content="Dedicated coordinators manage all aspects of the patient's surgical journey, improving outcomes and reducing stress."
-                    image="https://images.unsplash.com/photo-1580795478844-5ed694336c90"
+                    image="/navigation-photos/coordinate.jpeg"
                     number={2}
                 />
                 <InfoCard
                     title="Insurance Verification"
                     content="We identify and verify the patient's surgical coverage details, ensuring clear communication of benefits and potential costs."
-                    image="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40"
+                    image="/navigation-photos/verify.jpeg"
                     number={3}
                 />
                 <InfoCard
                     title="Cost-Effective Options"
                     content="Patients are provided with multiple surgical options, detailing cost differences and considering travel if necessary."
-                    image="https://images.unsplash.com/photo-1600007283728-22abc97b9318"
+                    image="/navigation-photos/cost.jpeg"
                     number={4}
                 />
                 <InfoCard
                     title="Second Opinion Service"
                     content="For significant procedures, we offer a second opinion service (at a cost) to enhance decision-making confidence."
-                    image="https://images.unsplash.com/photo-1666214277657-e60f05c40b04"
+                    image="/navigation-photos/opinion.jpeg"
                     number={5}
                 />
                 <InfoCard
                     title="Postoperative Support"
                     content="Our navigators provide ongoing support until the first postoperative visit, ensuring proper recovery and addressing any issues."
-                    image="https://images.unsplash.com/photo-1597764690523-15bea4c581c9"
+                    image="/navigation-photos/support.jpeg"
                     number={6}
                 />
             </div>
