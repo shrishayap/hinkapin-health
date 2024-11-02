@@ -21,7 +21,7 @@ export const ProcedureContactForm = ({ procedureName }: ProcedureContactFormProp
 
             <p className='text-lg font-bold'>Schedule a consultation for {procedureName}</p>
             <p className=''>Fill the form below to connect with our patient care coordination team and get a primary consultation booked.</p>
-            <iframe src='https://form.jotform.com/232096205062145' className='rounded-md h-[1015px] border'/>
+            <iframe src='https://forms.zohopublic.com/hinkapinhealth/form/NTTCSurgeryenquiryform1/formperma/X6KGjD7enRG2MadHZa3YtOy0FtS0La_8cihq9g7xZCI' className='rounded-md h-[900px] border'/>
 
         </div>
     );
