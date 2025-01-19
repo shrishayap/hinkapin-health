@@ -2,40 +2,65 @@ import Link from "next/link";
 
 export const PricingDisclaimerSection = () => {
     return (
+        <div className='rounded-xl border p-3 md:p-8 bg-black'>
+            <div className='text-white'>
+                <h3 className='text-4xl font-medium font-serif mb-6'>Payment Options</h3>
 
-        <div className='flex flex-col space-y-3'>
-            <h3 className='text-xl font-bold'>Payment Options</h3>
+                <div className='space-y-8'>
+                    {/* Payment methods */}
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
+                        <div className='bg-white/10 backdrop-blur rounded-lg p-4 text-center'>
+                            <p className='font-medium'>Cash</p>
+                        </div>
+                        <div className='bg-white/10 backdrop-blur rounded-lg p-4 text-center'>
+                            <Link 
+                                target="_blank" 
+                                className='font-medium hover:text-blue-200 transition-colors' 
+                                href='https://www.carecredit.com/howcarecreditworks/prospective/'
+                            >
+                                Care Credit
+                                <span className='block text-sm opacity-75'>
+                                    Pay over time
+                                </span>
+                            </Link>
+                        </div>
+                        <div className='bg-white/10 backdrop-blur rounded-lg p-4 text-center'>
+                            <p className='font-medium'>Money Orders</p>
+                        </div>
+                        <div className='bg-white/10 backdrop-blur rounded-lg p-4 text-center'>
+                            <p className='font-medium'>Credit & Debit Cards</p>
+                        </div>
+                    </div>
 
-            <div className='grid grid-cols-1 gap-overflow-auto'>
-
-                <div className='rounded-lg border bg-white p-4 flex-col space-y-2'>
-
-                    <p>Hinkapin Health offers several payment options for your convenience.</p>
-
-                    <ul className="flex flex-col md:flex-row md:justify-between font-bold">
-                        <p>Cash</p>
-                        <Link target="_blank" className='hover:underline ' href='https://www.carecredit.com/howcarecreditworks/prospective/'>Care Credit (Third party provider)</Link>
-                        <p>Money Orders</p>
-                        <p>Credit / Debit Cards</p>
-                    </ul>
-
-                    <p className='font-light text-xs'>
-                        A 3.5% fee will be added to all card payments for our bundled flat-rate surgery program. This fee applies to patients who pay for their procedures themselves, without using insurance. If you choose to pay with a card, the additional 3.5% fee will be added to your final payment amount.
-                        For example, if your total bill is $100, you would pay $103.50 if using a credit or debit card. We apologize for any inconvenience this may cause. We appreciate your understanding and continued patronage.
-                    </p>
-                    <p className='font-light text-xs'>
-                        This fee applies to all credit card transactions, including Visa, Mastercard, American Express, and Discover. The fee is non-refundable. We are unable to waive the fee.
-                    </p>
-                    <p className='font-light text-xs'>
-                        * Cash Rate Pricing is not applicable when using Insurance plans – Private or Medicare.
-                    </p>
-
+                    {/* Important Notes */}
+                    <div className='space-y-4 bg-white/10 backdrop-blur rounded-lg p-6'>
+                        <div className='space-y-4'>
+                            <p>
+                                When paying by card for our surgery package:
+                                <ul className='list-disc ml-6 mt-2 space-y-2'>
+                                    <li>There's a 3.5% card processing fee</li>
+                                    <li>This only applies to self-pay patients (not using insurance)</li>
+                                    <li>For example: A $100 bill becomes $103.50 with card payment</li>
+                                </ul>
+                            </p>
+                            
+                            <div className='border-t border-white/20 pt-4'>
+                                <p className='font-medium'>
+                                    Please Note:
+                                </p>
+                                <ul className='list-disc ml-6 mt-2 space-y-2'>
+                                    <li>Card fee applies to all major credit cards</li>
+                                    <li>Card processing fees are non-refundable</li>
+                                    <li>Special cash pricing isn't available with insurance or Medicare</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default PricingDisclaimerSection;
 

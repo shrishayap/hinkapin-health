@@ -45,8 +45,8 @@ export const PopularProcedureCard = ({ id, icon }: PopularProcedureCardProps) =>
             </div>
             <Image alt={name} src={icon} width={50} height={50} />
             <div className='flex flex-col items-center space-y-0'>
-                <p className="text-sm font-serif">Starting from</p>
-                <p className="text-2xl font-bold font-serif">{loading ? ' ' : formatter.format(price)}</p>
+                <p className="text-sm">Starting from</p>
+                <p className="text-2xl font-bold">{loading ? ' ' : formatter.format(price)}</p>
             </div>
 
             <Link href={`/procedures/${id}`}>
