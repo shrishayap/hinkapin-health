@@ -1,3 +1,4 @@
+'use client'
 import Link from "next/link";
 
 export const PricingDisclaimerSection = () => {
@@ -38,7 +39,7 @@ export const PricingDisclaimerSection = () => {
                             <p>
                                 When paying by card for our surgery package:
                                 <ul className='list-disc ml-6 mt-2 space-y-2'>
-                                    <li>There's a 3.5% card processing fee</li>
+                                    <li>There is a 3.5% card processing fee</li>
                                     <li>This only applies to self-pay patients (not using insurance)</li>
                                     <li>For example: A $100 bill becomes $103.50 with card payment</li>
                                 </ul>
@@ -51,7 +52,7 @@ export const PricingDisclaimerSection = () => {
                                 <ul className='list-disc ml-6 mt-2 space-y-2'>
                                     <li>Card fee applies to all major credit cards</li>
                                     <li>Card processing fees are non-refundable</li>
-                                    <li>Special cash pricing isn't available with insurance or Medicare</li>
+                                    <li>Special cash pricing is not available with insurance or Medicare</li>
                                 </ul>
                             </div>
                         </div>
