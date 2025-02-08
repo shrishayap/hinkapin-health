@@ -38,7 +38,7 @@ export const Header = () => {
     }, [])
 
     if (searchOnly) return (
-        <nav className="flex justify-center p-2 md:p-4 bg-white border-b-2">
+        <nav className="flex justify-center p-2 md:p-4 bg-[#f9da5c] border-4 border-black">
             <div className='flex space-x-2'>
                 <ProcedureSearchBar size='md' />
                 <IconButton onClick={() => setSearchOnly(false)} color="neutral" variant="outlined">
@@ -50,7 +50,7 @@ export const Header = () => {
     )
 
     return (
-        <nav className="flex justify-center p-2 md:p-4 bg-white border-b-2">
+        <nav className="flex justify-center p-2 md:p-4 bg-[#f9da5c] border-4 border-black">
 
             <div className='w-full max-w-[1200px] flex space-x-5 justify-between'>
 
@@ -71,10 +71,10 @@ export const Header = () => {
                 </div>
 
                 <div className="md:hidden flex space-x-2">
-                    <IconButton onClick={() => setSearchOnly(true)} color="neutral" variant="outlined">
+                    <IconButton className='border-2 border-black' onClick={() => setSearchOnly(true)} color="neutral" variant="outlined">
                         <IoSearch />
                     </IconButton>
-                    <IconButton onClick={() => setIsOpen(true)} color="neutral" variant="outlined">
+                    <IconButton className='border-2 border-black' onClick={() => setIsOpen(true)} color="neutral" variant="outlined">
                         <IoMenu />
                     </IconButton>
                 </div>

@@ -13,11 +13,28 @@ interface ProcedureSearchBarProps {
 }
 
 export const ProcedureSearchBar = ({ size = 'lg' }: ProcedureSearchBarProps) => {
-
     const [loading, setLoading] = useState(false)
     const [searchTerm, setSearchTerm] = useState('')
     const [options, setOptions] = useState<any[]>([])
-
+    
+    // Move placeholder logic to top level
+    const suggestions = [
+        "Knee pain...",
+        "Wrist surgery...", 
+        "Hip replacement...",
+        "Back pain...",
+        "Shoulder surgery...",
+        "Carpal tunnel...",
+        "Cataract surgery..."
+    ];
+    const [placeholder, setPlaceholder] = useState(suggestions[0]);
+    
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setPlaceholder(suggestions[Math.floor(Math.random() * suggestions.length)]);
+        }, 5000);
+        return () => clearInterval(interval);
+    }, []);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -33,12 +50,9 @@ export const ProcedureSearchBar = ({ size = 'lg' }: ProcedureSearchBarProps) => 
         fetchData();
     }, [searchTerm]);
 
-
-
     return (
-
-        < Autocomplete
-            className='flex-grow'
+        <Autocomplete
+            className='flex-grow border-2 border-black'
             freeSolo
             noOptionsText="No matching procedures"
             inputValue={searchTerm}
@@ -46,7 +60,7 @@ export const ProcedureSearchBar = ({ size = 'lg' }: ProcedureSearchBarProps) => 
                 setSearchTerm(newInputValue);
             }}
             startDecorator={< SearchIcon />}
-            placeholder="Search for procedures"
+            placeholder={placeholder}
             options={options}
             size={size}
             loading={loading}
@@ -67,9 +81,6 @@ export const ProcedureSearchBar = ({ size = 'lg' }: ProcedureSearchBarProps) => 
                 )
             }
         />
-
-
-
     )
 }
 
