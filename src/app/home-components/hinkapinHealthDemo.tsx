@@ -6,7 +6,7 @@ export const HinkapinHealthDemo = () => {
             <div className='flex justify-center'>
                 <iframe
                     className='w-full aspect-video rounded-xl'
-                    src="https://www.youtube.com/embed/i1PTzwg8kO4?si=40sqSunibwYDd03b"
+                    src="https://www.youtube.com/embed/0wC9DJ6NSgk?si=mo1AtOZNZiN8avaY"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen>
                 </iframe>
