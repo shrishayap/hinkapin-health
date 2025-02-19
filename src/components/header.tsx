@@ -52,10 +52,12 @@ export const Header = () => {
         fetchData();
     }, []);
 
-    const handleLanguageChange = (newValue) => {
-        setLanguage(newValue);
-        document.cookie = `language=${newValue}; path=/; max-age=31536000`; // 1 year expiry
-        window.location.reload(); // Reload to apply new language
+    const handleLanguageChange = (newValue: string | null) => {
+        if (newValue) {
+            setLanguage(newValue);
+            document.cookie = `language=${newValue}; path=/; max-age=31536000`; // 1 year expiry
+            window.location.reload(); // Reload to apply new language
+        }
     };
 
     if (searchOnly) return (
