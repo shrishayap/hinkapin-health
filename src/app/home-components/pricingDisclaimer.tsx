@@ -39,14 +39,14 @@ export const PricingDisclaimerSection = () => {
                     {/* Important Notes */}
                     <div className='space-y-4 bg-white/10 backdrop-blur rounded-lg p-6'>
                         <div className='space-y-4'>
-                            <p>
-                                {t('cardPayment.title')}
+                            <div>
+                                <p>{t('cardPayment.title')}</p>
                                 <ul className='list-disc ml-6 mt-2 space-y-2'>
                                     <li>{t('cardPayment.processingFee')}</li>
                                     <li>{t('cardPayment.selfPay')}</li>
                                     <li>{t('cardPayment.example')}</li>
                                 </ul>
-                            </p>
+                            </div>
                             
                             <div className='border-t border-white/20 pt-4'>
                                 <p className='font-medium'>
