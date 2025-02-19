@@ -9,7 +9,6 @@ import * as React from 'react';
 import ProcedureExplainCard from '../components/procedureExplainCard';
 import DoctorCardSkeleton from '@/app/categories/components/doctorCardSkeleton';
 import ProcedureContactForm from '../components/procedureContactForm';
-import { set } from 'firebase/database';
 
 
 export default function Page({ params }: { params: { uuid: string } }) {

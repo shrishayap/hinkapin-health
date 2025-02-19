@@ -1,6 +1,9 @@
+'use client'
+
 import Button from "@mui/joy/Button/Button";
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 interface ProcedureCardProps {
     name: string;
@@ -9,6 +12,7 @@ interface ProcedureCardProps {
 }
 
 export const ProcedureCard = ({ name, price, id }: ProcedureCardProps) => {
+    const t = useTranslations('PopularProcedureCard');
     const formatter = new Intl.NumberFormat('en-US', {
         style: 'currency',
         currency: 'USD',
@@ -29,9 +33,9 @@ export const ProcedureCard = ({ name, price, id }: ProcedureCardProps) => {
                     </div>
                     
                     <div className='space-y-1 mb-6'>
-                        <p className="text-sm text-gray-500 font-medium">Starting from</p>
+                        <p className="text-sm text-gray-500 font-medium">{t('startingFrom')}</p>
                         <p className="text-3xl font-bold text-gray-900">
-                            {formatter.format(price) == "$0" ? "Call for Price" : formatter.format(price)}
+                            {formatter.format(price) == "$0" ? t('callForPrice') : formatter.format(price)}
                         </p>
                     </div>
 
@@ -42,7 +46,7 @@ export const ProcedureCard = ({ name, price, id }: ProcedureCardProps) => {
                             color='neutral'
                             className="w-full group-hover:bg-gray-50 transition-colors duration-300"
                         >
-                            Learn More
+                            {t('learnMore')}
                         </Button>
                     </Link>
                 </div>

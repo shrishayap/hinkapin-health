@@ -1,13 +1,15 @@
-
+'use client'
 import Button from "@mui/joy/Button/Button";
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 interface SpecialProcedureCardProps {
     name: string;
 }
 
 export const SpecialProcedureCard = ({ name }: SpecialProcedureCardProps) => {
+    const t = useTranslations('SpecialtyProcedures');
 
     const formatter = new Intl.NumberFormat('en-US', {
         style: 'currency',
@@ -24,7 +26,7 @@ export const SpecialProcedureCard = ({ name }: SpecialProcedureCardProps) => {
 
             <Link href={`/contact`}>
                 <Button endDecorator={<KeyboardArrowRight />} variant="outlined" color='neutral' >
-                    Contact us to learn more
+                    {t('contactUs')}
                 </Button>
             </Link>
         </div>

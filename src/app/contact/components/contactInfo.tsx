@@ -1,8 +1,9 @@
+'use client'
 import { MdOutlineMail } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
 import { IoTimeOutline } from "react-icons/io5";
-
+import { useTranslations } from 'next-intl';
 
 interface ContactInfoProps {
     orgName: string;
@@ -12,16 +13,17 @@ interface ContactInfoProps {
 }
 
 export const ContactInfo = ({ orgName, email, phone, address }: ContactInfoProps) => {
+    const t = useTranslations('ContactInfo');
+
     return (
         <div className='flex flex-col space-y-3 p-3 md:p-8 rounded-xl border-2 border-black'>
             <p className='text-2xl font-serif font-bold'>{orgName}</p>
-            <p>Contact us today to get personal patient care coordination services and get your primary consultation booked. Get started by contacting us via email, phone, or by filling out the form. We look forward to hearing from you!</p>
-
+            <p>{t('subtitle')}</p>
 
             <div className='items-center flex space-x-1'>
                 <MdOutlineMail className='w-6 h-6' />
                 <div className='flex flex-col'>
-                    <p className='font-bold'>Email</p>
+                    <p className='font-bold'>{t('email')}</p>
                     <p>{email}</p>
                 </div>
             </div>
@@ -29,7 +31,7 @@ export const ContactInfo = ({ orgName, email, phone, address }: ContactInfoProps
             <div className='items-center flex space-x-1'>
                 <FiPhone className='w-6 h-6' />
                 <div className='flex flex-col'>
-                    <p className='font-bold'>Phone</p>
+                    <p className='font-bold'>{t('phone')}</p>
                     <p>{phone}</p>
                 </div>
             </div>
@@ -37,7 +39,7 @@ export const ContactInfo = ({ orgName, email, phone, address }: ContactInfoProps
             <div className='items-center flex space-x-1'>
                 <IoLocationOutline className='w-6 h-6' />
                 <div className='flex flex-col'>
-                    <p className='font-bold'>Address</p>
+                    <p className='font-bold'>{t('address')}</p>
                     <p>{address}</p>
                 </div>
             </div>
@@ -45,8 +47,8 @@ export const ContactInfo = ({ orgName, email, phone, address }: ContactInfoProps
             <div className='items-center flex space-x-1'>
                 <IoTimeOutline className='w-6 h-6' />
                 <div className='flex flex-col'>
-                    <p className='font-bold'>Office Hours</p>
-                    <p>8:00 AM - 5:00 PM CST</p>
+                    <p className='font-bold'>{t('officeHours')}</p>
+                    <p>{t('officeHoursValue')}</p>
                 </div>
             </div>
         </div>

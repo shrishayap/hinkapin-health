@@ -1,6 +1,6 @@
 import Header from "@/components/header";
 
-export function Page() {
+export default function Page() {
     return (
 
         <div className='flex flex-col space-y-4'>
@@ -39,5 +39,3 @@ export function Page() {
         </div>
     )
 }
-
-export default Page;

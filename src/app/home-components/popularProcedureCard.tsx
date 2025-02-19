@@ -5,6 +5,7 @@ import Button from "@mui/joy/Button/Button";
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 interface PopularProcedureCardProps {
     id: number;
@@ -12,7 +13,7 @@ interface PopularProcedureCardProps {
 }
 
 export const PopularProcedureCard = ({ id, icon }: PopularProcedureCardProps) => {
-
+    const t = useTranslations('PopularProcedureCard');
     const [name, setName] = useState("")
     const [price, setPrice] = useState(0)
     const [loading, setLoading] = useState(true)
@@ -45,13 +46,13 @@ export const PopularProcedureCard = ({ id, icon }: PopularProcedureCardProps) =>
             </div>
             <Image alt={name} src={icon} width={50} height={50} />
             <div className='flex flex-col items-center space-y-0'>
-                <p className="text-sm">Starting from</p>
+                <p className="text-sm">{t('startingFrom')}</p>
                 <p className="text-2xl font-bold">{loading ? ' ' : formatter.format(price)}</p>
             </div>
 
             <Link href={`/procedures/${id}`}>
                 <Button endDecorator={<KeyboardArrowRight />} variant="outlined" color='neutral' >
-                    Learn More
+                    {t('learnMore')}
                 </Button>
             </Link>
         </div>

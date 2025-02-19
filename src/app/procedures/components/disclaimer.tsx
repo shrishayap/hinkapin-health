@@ -1,62 +1,49 @@
+'use client'
+
 import Accordion from '@mui/joy/Accordion';
 import AccordionDetails from '@mui/joy/AccordionDetails';
 import AccordionSummary from '@mui/joy/AccordionSummary';
+import { useTranslations } from 'next-intl';
 
 export const ProcedureDisclaimer = () => {
+    const t = useTranslations('ProcedureDisclaimer');
 
     return (
         <div>
-             <Accordion expanded>
-                    <AccordionSummary className='text-md font-bold'>Disclaimer</AccordionSummary>
-                    <AccordionDetails>
-
-
-                        <div className='flex flex-col space-y-2'>
-
-                            <div>
-                                <p>Price Includes:</p>
-                                <ul className="list-inside list-disc">
-                                    <li>Pre-Operative Consulation</li>
-                                    <li>Surgeon</li>
-                                    <li>Anesthesia</li>
-                                    <li>Pathology*</li>
-                                    <li>All medications and supplies for surgery</li>
-                                </ul>
-                            </div>
-
-
-                            <div>
-                                <p className='pt-2'>Price Excludes:</p>
-                                <ul className="list-inside list-disc">
-                                    <li>Transportation</li>
-                                    <li>Pre-Operative Imaging - CT, MRI, etc</li>
-                                    <li>Diagnostic Labs</li>
-                                    <li>Management of Complications</li>
-                                    <li>Postoperative Medications</li>
-                                    <li>Additional Specialist Consultation if needed</li>
-                                </ul>
-                            </div>
-
-                            <p className='font-light text-xs'>
-                                *May vary on a case-by-case basis, as determined by the surgeon at the time of consultation.
-                            </p>
-
-                            <p className='font-light text-xs'>
-                                *If an overnight stay is required, an additional fee will be incurred.
-                            </p>
-                            <p className='font-light text-xs'>
-                                *We do not accept public or private insurance plans for self-pay patients
-                            </p>
-                            <p className='font-light text-xs'>
-                                Note: Cash prices apply to patients who pay the entire fee in advance, and will likely not count toward an insurance deductible. If you choose to have a claim filed, either for private insurance or government insurance (Medicare, Medicaid, etc.), the quoted cash rate does not apply to you. The cash prices offered are possible because advance payment eliminates 1) the expense of processing claims and 2) the risk of non-payment of fees. Prices include applicable facility, physician, and anesthesia fees. Additional fees may be charged for complication or comorbidity.
-                            </p>
+            <Accordion expanded>
+                <AccordionSummary className='text-md font-bold'>{t('title')}</AccordionSummary>
+                <AccordionDetails>
+                    <div className='flex flex-col space-y-2'>
+                        <div>
+                            <p>{t('includes')}</p>
+                            <ul className="list-inside list-disc">
+                                <li>{t('includesList.consultation')}</li>
+                                <li>{t('includesList.surgeon')}</li>
+                                <li>{t('includesList.anesthesia')}</li>
+                                <li>{t('includesList.pathology')}</li>
+                                <li>{t('includesList.supplies')}</li>
+                            </ul>
                         </div>
 
+                        <div>
+                            <p className='pt-2'>{t('excludes')}</p>
+                            <ul className="list-inside list-disc">
+                                <li>{t('excludesList.transportation')}</li>
+                                <li>{t('excludesList.imaging')}</li>
+                                <li>{t('excludesList.labs')}</li>
+                                <li>{t('excludesList.complications')}</li>
+                                <li>{t('excludesList.postOpMeds')}</li>
+                                <li>{t('excludesList.specialistConsult')}</li>
+                            </ul>
+                        </div>
 
-
-                    </AccordionDetails>
-                </Accordion>
-               
+                        <p className='font-light text-xs'>{t('notes.pathologyNote')}</p>
+                        <p className='font-light text-xs'>{t('notes.overnightStay')}</p>
+                        <p className='font-light text-xs'>{t('notes.insurance')}</p>
+                        <p className='font-light text-xs'>{t('notes.cashPrice')}</p>
+                    </div>
+                </AccordionDetails>
+            </Accordion>
         </div>
     )
 }

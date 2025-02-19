@@ -1,0 +1,231 @@
+{
+    "LandingHero": {
+      "title": "Simple, Clear Pricing for your Surgery",
+      "subtitle": "We make healthcare easy to understand. You will know the exact price before treatment. Our trusted doctors provide quality care at fair prices - no hidden costs.",
+      "contactButton": "Need help? Contact us to plan your care"
+    },
+    "MidPageCTA": {
+        "title": "One simple price. No surprise charges or fees.",
+        "subtitle": "Contact us now to talk with our team and book your visit"
+    },
+    "HinkapinHealthDemo": {
+        "title": "Hinkapin Health Demo"
+    },
+    "HowItWorks": {
+        "title": "How it works",
+        "step1": "Our care coordinators communicate with all parties to orchestrate your surgical procedure planning, making the process seamless.",
+        "step2": "We collaborate throughout your surgical journey, saving you time and money while ensuring the highest quality care.",
+        "step3": "Get transparent, cost-efficient pricing with custom surgical bundles tailored to your specific needs."
+    },
+    "PopularProcedureCard": {
+        "startingFrom": "Starting from",
+        "learnMore": "Learn More",
+        "callForPrice": "Call for Price"
+    },
+    "PopularProcedureSection": {
+        "title": "View Popular Surgeries"
+    },
+    "PricingDisclaimer": {
+        "title": "Payment Options",
+        "paymentMethods": {
+            "cash": "Cash",
+            "careCredit": "Care Credit",
+            "payOverTime": "Pay over time",
+            "moneyOrders": "Money Orders",
+            "cards": "Credit & Debit Cards"
+        },
+        "cardPayment": {
+            "title": "When paying by card for our surgery package:",
+            "processingFee": "There is a 3.5% card processing fee",
+            "selfPay": "This only applies to self-pay patients (not using insurance)",
+            "example": "For example: A $100 bill becomes $103.50 with card payment"
+        },
+        "pleaseNote": {
+            "title": "Please Note:",
+            "allCards": "Card fee applies to all major credit cards",
+            "nonRefundable": "Card processing fees are non-refundable",
+            "cashPricing": "Special cash pricing is not available with insurance or Medicare"
+        }
+    },
+    "SurgeryCategorySection": {
+        "title": "Search Procedures by Category",
+        "miscLink": "Click here to learn about miscellaneous procedures and specialties",
+        "categories": {
+            "cardio": "Cardio / Vascular",
+            "colorectal": "Colorectal",
+            "ent": "Ear, Nose & Throat",
+            "gastro": "Gastroenterology",
+            "general": "General Surgery",
+            "gynecology": "Gynecology",
+            "orthopedic": "Orthopedic",
+            "pain": "Pain Management",
+            "opthamology": "Opthamology",
+            "podiatry": "Podiatry",
+            "spine": "Spine",
+            "urology": "Urology"
+        }
+    },
+    "SpecialtyProcedures": {
+        "title": "Specialty Procedures",
+        "subtitle": "The following procedures and specialties may be offered. Please contact us to learn more about availabilty and pricing",
+        "procedures": {
+            "bariatric": "Bariatric",
+            "dermatology": "Dermatology",
+            "pediatrics": "Pediatrics",
+            "dental": "Dental/ Oral/ Maxofacial",
+            "hand": "Hand Surgery",
+            "occuloplastic": "Occuloplastic",
+            "plastic": "Plastic Surgery"
+        },
+        "contactUs": "Contact us to learn more"
+    },
+    "GeneralContactForm": {
+        "title": "Contact {orgName} today"
+    },
+    "NotFound": {
+        "title": "404: Page Not Found",
+        "message": "We're sorry, but the page you are looking for does not exist.",
+        "homeLink": "Click here to return to the home page"
+    },
+    "SurgicalNavigation": {
+        "title": "Surgical Navigation Solution",
+        "subtitle": "What is Surgical Navigation?",
+        "description1": "Hinkapin Health's Surgical Navigation Solution is an innovative service designed to enhance patient care, reduce healthcare costs, and improve overall client satisfaction. Our comprehensive solution offers a seamless process for surgical procedures, ensuring that patients receive the best care at the most affordable rates.",
+        "description2": "Our solution simplifies the surgical process, from initial patient contact to postoperative support, providing personalized care coordination, cost-effective options, and quality assurance throughout the journey."
+    },
+    "SurgicalNavSteps": {
+        "title": "How It Works",
+        "steps": {
+            "initialContact": {
+                "title": "Initial Patient Contact",
+                "content": "Patients can reach out to us as soon as surgery is recommended, allowing for proactive engagement."
+            },
+            "careCoordination": {
+                "title": "Personalized Care Coordination",
+                "content": "Dedicated coordinators manage all aspects of the patient's surgical journey, improving outcomes and reducing stress."
+            },
+            "insurance": {
+                "title": "Insurance Verification",
+                "content": "We identify and verify the patient's surgical coverage details, ensuring clear communication of benefits and potential costs."
+            },
+            "costEffective": {
+                "title": "Cost-Effective Options",
+                "content": "Patients are provided with multiple surgical options, detailing cost differences and considering travel if necessary."
+            },
+            "secondOpinion": {
+                "title": "Second Opinion Service",
+                "content": "For significant procedures, we offer a second opinion service (at a cost) to enhance decision-making confidence."
+            },
+            "postOp": {
+                "title": "Postoperative Support",
+                "content": "Our navigators provide ongoing support until the first postoperative visit, ensuring proper recovery and addressing any issues."
+            }
+        }
+    },
+    "CompareNav": {
+        "title": "The Impact of Surgical Navigation",
+        "withNav": {
+            "title": "With Navigation",
+            "points": [
+                "Personalized care coordination",
+                "Cost-effective surgical options",
+                "Dedicated support throughout the process",
+                "Improved health outcomes",
+                "Enhanced patient satisfaction"
+            ]
+        },
+        "withoutNav": {
+            "title": "Without Navigation",
+            "points": [
+                "Complex, often confusing process",
+                "Potential for higher costs",
+                "Limited support and guidance",
+                "Increased stress and anxiety",
+                "Potential for suboptimal outcomes"
+            ]
+        }
+    },
+    "SurgicalNavCTA": {
+        "title": "Ready to Get Started?",
+        "qrCodeAlt": "QR Code to Hinkapin Health",
+        "pricing": "Single cost. Upfront pricing. Bundled.",
+        "consultation": "Work with a patient care coordinator and get a consultation booked.",
+        "contact": "Scan the QR code or click the arrow to contact us, or call us today at"
+    },
+    "WorkWithNav": {
+        "title": "Who We Work With",
+        "tpa": {
+            "title": "TPA (Third Party Administration)",
+            "description": "We collaborate with TPAs to streamline the administrative process and ensure efficient claim management."
+        },
+        "brokers": {
+            "title": "Health Brokers",
+            "description": "Our partnership with health brokers helps in providing comprehensive solutions to their clients."
+        },
+        "patients": {
+            "title": "Insurance Patients",
+            "description": "We work directly with insured patients to navigate their coverage and find the best surgical options."
+        }
+    },
+    "ProcedureDisclaimer": {
+        "title": "Disclaimer",
+        "includes": "Price Includes:",
+        "includesList": {
+            "consultation": "Pre-Operative Consultation",
+            "surgeon": "Surgeon",
+            "anesthesia": "Anesthesia",
+            "pathology": "Pathology*",
+            "supplies": "All medications and supplies for surgery"
+        },
+        "excludes": "Price Excludes:",
+        "excludesList": {
+            "transportation": "Transportation",
+            "imaging": "Pre-Operative Imaging - CT, MRI, etc",
+            "labs": "Diagnostic Labs",
+            "complications": "Management of Complications",
+            "postOpMeds": "Postoperative Medications",
+            "specialistConsult": "Additional Specialist Consultation if needed"
+        },
+        "notes": {
+            "pathologyNote": "*May vary on a case-by-case basis, as determined by the surgeon at the time of consultation.",
+            "overnightStay": "*If an overnight stay is required, an additional fee will be incurred.",
+            "insurance": "*We do not accept public or private insurance plans for self-pay patients",
+            "cashPrice": "Note: Cash prices apply to patients who pay the entire fee in advance, and will likely not count toward an insurance deductible. If you choose to have a claim filed, either for private insurance or government insurance (Medicare, Medicaid, etc.), the quoted cash rate does not apply to you. The cash prices offered are possible because advance payment eliminates 1) the expense of processing claims and 2) the risk of non-payment of fees. Prices include applicable facility, physician, and anesthesia fees. Additional fees may be charged for complication or comorbidity."
+        }
+    },
+    "ProcedureContactForm": {
+        "title": "Schedule a consultation for {procedureName}",
+        "subtitle": "Fill the form below to connect with our patient care coordination team and get a primary consultation booked."
+    },
+    "ProcedureExplainCard": {
+        "commonName": "Common Name",
+        "cptCode": "CPT Code",
+        "description": "Description",
+        "notAvailable": "Not available",
+        "price": "Price",
+        "startingFrom": "Starting from",
+        "callForPrice": "Please call for price",
+        "pricesMayVary": "Prices may vary by location.",
+        "implantDisclaimer": "*Implants and prosthesis price not included.",
+        "availableLocations": "Available Locations",
+        "locationNotListed": "If your location is not listed, please contact us",
+        "viewPaymentOptions": "View all payment options"
+    },
+    "Footer": {
+        "tagline": "Quality healthcare at an upfront, affordable cost",
+        "acknowledgements": "Acknowledgements",
+        "emergencyMessage": "For medical emergencies, call 911"
+    },
+    "ProcedureCardHolder": {
+        "proceduresAvailable": "Procedures available",
+        "noProceduresFound": "Sorry, we were unable to find any procedures in this category. Please select another category to search other available providers.",
+        "dataNotFoundAlt": "Data not found"
+    },
+    "Navigation": {
+        "popular": "Popular",
+        "categories": "Categories",
+        "howItWorks": "How it Works",
+        "navigation": "Navigation",
+        "contact": "Contact"
+    }
+}

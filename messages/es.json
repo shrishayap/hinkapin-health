@@ -1,0 +1,240 @@
+{
+  "LandingHero": {
+    "title": "Precios Simples y Claros para tu Cirugía",
+    "subtitle": "Hacemos que la atención médica sea fácil de entender. Conocerás el precio exacto antes del tratamiento. Nuestros médicos de confianza brindan atención de calidad a precios justos, sin costos ocultos.",
+    "contactButton": "¿Necesitas ayuda? Contáctanos para planificar tu atención"
+  },
+  "MidPageCTA": {
+    "title": "Un precio simple. Sin cargos ni tarifas sorpresa.",
+    "subtitle": "Contáctanos ahora para hablar con nuestro equipo y reservar tu visita"
+  },
+  "HinkapinHealthDemo": {
+    "title": "Demostración de Hinkapin Health"
+  },
+  "HowItWorks": {
+    "title": "Como funciona",
+    "step1": "Nuestros coordinadores de atención se comunican con todas las partes para organizar la planificación de su procedimiento quirúrgico, haciendo que el proceso sea fluido.",
+    "step2": "Colaboramos durante todo su proceso quirúrgico, ahorrándole tiempo y dinero mientras garantizamos la atención de la más alta calidad.",
+    "step3": "Obtenga precios transparentes y rentables con paquetes quirúrgicos personalizados adaptados a sus necesidades específicas."
+  },
+  "PopularProcedureCard": {
+    "startingFrom": "Desde",
+    "learnMore": "Más Información",
+    "callForPrice": "Llame para consultar el precio"
+  },
+  "PopularProcedureSection": {
+    "title": "Ver Cirugías Populares"
+  },
+  "PricingDisclaimer": {
+    "title": "Opciones de Pago",
+    "paymentMethods": {
+      "cash": "Efectivo",
+      "careCredit": "Care Credit",
+      "payOverTime": "Pago a plazos",
+      "moneyOrders": "Giros Postales",
+      "cards": "Tarjetas de Crédito y Débito"
+    },
+    "cardPayment": {
+      "title": "Al pagar con tarjeta por nuestro paquete quirúrgico:",
+      "processingFee": "Hay una tarifa de procesamiento de tarjeta del 3.5%",
+      "selfPay": "Esto solo aplica a pacientes de pago directo (sin usar seguro)",
+      "example": "Por ejemplo: Una factura de $100 se convierte en $103.50 con pago con tarjeta"
+    },
+    "pleaseNote": {
+      "title": "Por favor note:",
+      "allCards": "La tarifa aplica a todas las tarjetas de crédito principales",
+      "nonRefundable": "Las tarifas de procesamiento de tarjetas no son reembolsables",
+      "cashPricing": "Los precios especiales en efectivo no están disponibles con seguro o Medicare"
+    }
+  },
+  "SurgeryCategorySection": {
+    "title": "Buscar Procedimientos por Categoría",
+    "miscLink": "Haga clic aquí para conocer procedimientos y especialidades misceláneos",
+    "categories": {
+      "cardio": "Cardio / Vascular",
+      "colorectal": "Colorrectal",
+      "ent": "Oído, Nariz y Garganta",
+      "gastro": "Gastroenterología",
+      "general": "Cirugía General",
+      "gynecology": "Ginecología",
+      "orthopedic": "Ortopedia",
+      "pain": "Manejo del Dolor",
+      "opthamology": "Oftalmología",
+      "podiatry": "Podología",
+      "spine": "Columna Vertebral",
+      "urology": "Urología"
+    }
+  },
+  "SpecialtyProcedures": {
+    "title": "Procedimientos Especializados",
+    "subtitle": "Los siguientes procedimientos y especialidades pueden estar disponibles. Contáctenos para obtener más información sobre disponibilidad y precios",
+    "procedures": {
+      "bariatric": "Bariátrica",
+      "dermatology": "Dermatología",
+      "pediatrics": "Pediatría",
+      "dental": "Dental/ Oral/ Maxilofacial",
+      "hand": "Cirugía de Mano",
+      "occuloplastic": "Oculoplástica",
+      "plastic": "Cirugía Plástica"
+    },
+    "contactUs": "Contáctanos para aprender más"
+  },
+  "ContactInfo": {
+    "title": "Información de Contacto",
+    "subtitle": "Contáctenos hoy para obtener servicios personales de coordinación de atención al paciente y reserve su consulta primaria. Comience contactándonos por correo electrónico, teléfono o completando el formulario. ¡Esperamos saber de usted!",
+    "email": "Correo Electrónico",
+    "phone": "Teléfono",
+    "address": "Dirección",
+    "officeHours": "Horario de Oficina",
+    "officeHoursValue": "8:00 AM - 5:00 PM CST"
+  },
+  "GeneralContactForm": {
+    "title": "Contacta a {orgName} hoy"
+  },
+  "NotFound": {
+    "title": "404: Página No Encontrada",
+    "message": "Lo sentimos, pero la página que busca no existe.",
+    "homeLink": "Haga clic aquí para volver a la página de inicio"
+  },
+  "SurgicalNavigation": {
+    "title": "Solución de Navegación Quirúrgica",
+    "subtitle": "¿Qué es la Navegación Quirúrgica?",
+    "description1": "La Solución de Navegación Quirúrgica de Hinkapin Health es un servicio innovador diseñado para mejorar la atención al paciente, reducir los costos de atención médica y mejorar la satisfacción general del cliente. Nuestra solución integral ofrece un proceso fluido para procedimientos quirúrgicos, asegurando que los pacientes reciban la mejor atención a las tarifas más asequibles.",
+    "description2": "Nuestra solución simplifica el proceso quirúrgico, desde el contacto inicial con el paciente hasta el apoyo postoperatorio, brindando coordinación de atención personalizada, opciones rentables y garantía de calidad durante todo el proceso."
+  },
+  "SurgicalNavSteps": {
+    "title": "Cómo Funciona",
+    "steps": {
+      "initialContact": {
+        "title": "Contacto Inicial del Paciente",
+        "content": "Los pacientes pueden contactarnos tan pronto como se recomiende la cirugía, permitiendo un compromiso proactivo."
+      },
+      "careCoordination": {
+        "title": "Coordinación de Atención Personalizada",
+        "content": "Los coordinadores dedicados gestionan todos los aspectos del proceso quirúrgico del paciente, mejorando los resultados y reduciendo el estrés."
+      },
+      "insurance": {
+        "title": "Verificación del Seguro",
+        "content": "Identificamos y verificamos los detalles de la cobertura quirúrgica del paciente, asegurando una comunicación clara de los beneficios y costos potenciales."
+      },
+      "costEffective": {
+        "title": "Opciones Rentables",
+        "content": "Se proporcionan múltiples opciones quirúrgicas a los pacientes, detallando las diferencias de costos y considerando el viaje si es necesario."
+      },
+      "secondOpinion": {
+        "title": "Servicio de Segunda Opinión",
+        "content": "Para procedimientos significativos, ofrecemos un servicio de segunda opinión (con costo) para mejorar la confianza en la toma de decisiones."
+      },
+      "postOp": {
+        "title": "Apoyo Postoperatorio",
+        "content": "Nuestros navegadores brindan apoyo continuo hasta la primera visita postoperatoria, asegurando una recuperación adecuada y abordando cualquier problema."
+      }
+    }
+  },
+  "CompareNav": {
+    "title": "El Impacto de la Navegación Quirúrgica",
+    "withNav": {
+      "title": "Con Navegación",
+      "points": [
+        "Coordinación de atención personalizada",
+        "Opciones quirúrgicas rentables",
+        "Apoyo dedicado durante todo el proceso",
+        "Mejores resultados de salud",
+        "Mayor satisfacción del paciente"
+      ]
+    },
+    "withoutNav": {
+      "title": "Sin Navegación",
+      "points": [
+        "Proceso complejo y a menudo confuso",
+        "Posibilidad de costos más altos",
+        "Apoyo y orientación limitados",
+        "Mayor estrés y ansiedad",
+        "Posibilidad de resultados subóptimos"
+      ]
+    }
+  },
+  "SurgicalNavCTA": {
+    "title": "¿Listo para Empezar?",
+    "qrCodeAlt": "Código QR a Hinkapin Health",
+    "pricing": "Costo único. Precio por adelantado. Todo incluido.",
+    "consultation": "Trabaje con un coordinador de atención al paciente y reserve una consulta.",
+    "contact": "Escanee el código QR o haga clic en la flecha para contactarnos, o llámenos hoy al"
+  },
+  "WorkWithNav": {
+    "title": "Con Quién Trabajamos",
+    "tpa": {
+      "title": "TPA (Administración de Terceros)",
+      "description": "Colaboramos con TPAs para agilizar el proceso administrativo y garantizar una gestión eficiente de reclamos."
+    },
+    "brokers": {
+      "title": "Corredores de Seguros de Salud",
+      "description": "Nuestra asociación con corredores de seguros de salud ayuda a proporcionar soluciones integrales a sus clientes."
+    },
+    "patients": {
+      "title": "Pacientes Asegurados",
+      "description": "Trabajamos directamente con pacientes asegurados para navegar su cobertura y encontrar las mejores opciones quirúrgicas."
+    }
+  },
+  "ProcedureDisclaimer": {
+    "title": "Aviso Legal",
+    "includes": "El Precio Incluye:",
+    "includesList": {
+      "consultation": "Consulta Preoperatoria",
+      "surgeon": "Cirujano",
+      "anesthesia": "Anestesia",
+      "pathology": "Patología*",
+      "supplies": "Todos los medicamentos y suministros para la cirugía"
+    },
+    "excludes": "El Precio Excluye:",
+    "excludesList": {
+      "transportation": "Transporte",
+      "imaging": "Imágenes Preoperatorias - TC, RM, etc",
+      "labs": "Pruebas Diagnósticas",
+      "complications": "Manejo de Complicaciones",
+      "postOpMeds": "Medicamentos Postoperatorios",
+      "specialistConsult": "Consulta Adicional con Especialista si es necesario"
+    },
+    "notes": {
+      "pathologyNote": "*Puede variar según el caso, según lo determine el cirujano en el momento de la consulta.",
+      "overnightStay": "*Si se requiere una estadía nocturna, se incurrirá en un cargo adicional.",
+      "insurance": "*No aceptamos planes de seguro públicos o privados para pacientes de pago directo",
+      "cashPrice": "Nota: Los precios en efectivo se aplican a los pacientes que pagan la tarifa completa por adelantado y probablemente no contarán para el deducible del seguro. Si elige presentar un reclamo, ya sea para seguro privado o gubernamental (Medicare, Medicaid, etc.), la tarifa en efectivo cotizada no se aplica a usted. Los precios en efectivo ofrecidos son posibles porque el pago por adelantado elimina 1) el gasto de procesar reclamos y 2) el riesgo de falta de pago de tarifas. Los precios incluyen las tarifas aplicables de instalación, médico y anestesia. Se pueden cobrar tarifas adicionales por complicaciones o comorbilidades."
+    }
+  },
+  "ProcedureContactForm": {
+    "title": "Programar una consulta para {procedureName}",
+    "subtitle": "Complete el formulario a continuación para conectarse con nuestro equipo de coordinación de atención al paciente y programar una consulta primaria."
+  },
+  "ProcedureExplainCard": {
+    "commonName": "Nombre Común",
+    "cptCode": "Código CPT",
+    "description": "Descripción",
+    "notAvailable": "No disponible",
+    "price": "Precio",
+    "startingFrom": "Desde",
+    "callForPrice": "Llame para consultar el precio",
+    "pricesMayVary": "Los precios pueden variar según la ubicación.",
+    "implantDisclaimer": "*Precio de implantes y prótesis no incluido.",
+    "availableLocations": "Ubicaciones Disponibles",
+    "locationNotListed": "Si su ubicación no está en la lista, contáctenos",
+    "viewPaymentOptions": "Ver todas las opciones de pago"
+  },
+  "Footer": {
+    "tagline": "Atención médica de calidad a un costo inicial asequible",
+    "acknowledgements": "Agradecimientos",
+    "emergencyMessage": "Para emergencias médicas, llame al 911"
+  },
+  "ProcedureCardHolder": {
+    "proceduresAvailable": "Procedimientos disponibles",
+    "noProceduresFound": "Lo sentimos, no pudimos encontrar ningún procedimiento en esta categoría. Por favor, seleccione otra categoría para buscar otros proveedores disponibles.",
+    "dataNotFoundAlt": "Datos no encontrados"
+  },
+  "Navigation": {
+    "popular": "Popular",
+    "categories": "Categorías",
+    "howItWorks": "Cómo Funciona",
+    "navigation": "Navegación",
+    "contact": "Contacto"
+  }
+}

@@ -1,32 +1,35 @@
-export const HowItWorkSection = () => {
-    return (
+'use client'
+import { useTranslations } from 'next-intl';
 
+export const HowItWorkSection = () => {
+    const t = useTranslations('HowItWorks');
+
+    return (
         <div className='flex flex-col space-y-3'>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-2 gap-overflow-auto'>
-
                 <div className='rounded-lg border bg-white p-6 flex flex-col space-y-4'>
-                    <h3 className='text-xl font-bold'>View Popular Surgeries</h3>
+                    <h3 className='text-xl font-bold'>{t('title')}</h3>
                     
                     <div className='flex flex-col space-y-6'>
                         <div className='flex items-start space-x-4'>
                             <div className='bg-indigo-100 rounded-full p-2 mt-1'>
                                 <span className='text-indigo-600 font-semibold'>1</span>
                             </div>
-                            <p className='text-gray-700'>Our care coordinators communicate with all parties to orchestrate your surgical procedure planning, making the process seamless.</p>
+                            <p className='text-gray-700'>{t('step1')}</p>
                         </div>
 
                         <div className='flex items-start space-x-4'>
                             <div className='bg-indigo-100 rounded-full p-2 mt-1'>
                                 <span className='text-indigo-600 font-semibold'>2</span>
                             </div>
-                            <p className='text-gray-700'>We collaborate throughout your surgical journey, saving you time and money while ensuring the highest quality care.</p>
+                            <p className='text-gray-700'>{t('step2')}</p>
                         </div>
 
                         <div className='flex items-start space-x-4'>
                             <div className='bg-indigo-100 rounded-full p-2 mt-1'>
                                 <span className='text-indigo-600 font-semibold'>3</span>
                             </div>
-                            <p className='text-gray-700'>Get transparent, cost-efficient pricing with custom surgical bundles tailored to your specific needs.</p>
+                            <p className='text-gray-700'>{t('step3')}</p>
                         </div>
                     </div>
                 </div>
