@@ -5,9 +5,8 @@ export const revalidate = 60;
 
 
 
-export async function GET(request: { nextUrl: { searchParams: any; }; }) {
-
-  const { searchParams } = request.nextUrl;
+export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url);
   let id = searchParams.get('id');
   
   try {

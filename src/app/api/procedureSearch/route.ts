@@ -1,10 +1,12 @@
-
 import { sql } from '@vercel/postgres';
 import { NextResponse } from 'next/server';
 
-export async function GET(request: { nextUrl: { searchParams: any; }; }) {
-    const { searchParams } = request.nextUrl;
-    let searchQuery = searchParams.get('query').toLowerCase();
+export async function GET(request: Request) {
+    const { searchParams } = new URL(request.url);
+    let searchQuery = searchParams.get('query')?.toLowerCase();
+    if (!searchQuery) {
+        return NextResponse.json({ error: 'No search query provided' }, { status: 400 });
+    }
     const queryWithPercent = `%${searchQuery}%`;
 
     try {

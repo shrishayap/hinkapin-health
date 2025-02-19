@@ -7,7 +7,7 @@ import HowItWorkSection from "../home-components/howItWorksSection"
 import { useState, useEffect } from "react";
 
 
-export function Page() {
+export default function Page() {
 
     const [orgData, setOrgData] = useState(null);
 
@@ -69,5 +69,4 @@ export function Page() {
     )
 }
 
-export default Page
 

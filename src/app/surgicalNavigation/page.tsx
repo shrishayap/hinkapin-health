@@ -7,7 +7,7 @@ import Header from '@/components/header';
 import SurgicalNavCTA from './components/surgicalNavCTA';
 import { useTranslations } from 'next-intl';
 
-const SurgicalNavigationPage = () => {
+export default function Page() {
     const t = useTranslations('SurgicalNavigation');
 
     return (
@@ -37,4 +37,3 @@ const SurgicalNavigationPage = () => {
     );
 };
 
-export default SurgicalNavigationPage;

@@ -3,11 +3,14 @@ import { NextResponse } from 'next/server';
 
 export const revalidate = 60;
 
-export async function GET(request: { nextUrl: { searchParams: any; }; }) {
-
-  const { searchParams } = request.nextUrl;
+export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url);
   let category = searchParams.get('category');
-  category = category.toLowerCase();
+  if (category) {
+    category = category.toLowerCase();
+  } else {
+    return Response.json({ error: 'No category provided' }, { status: 400 });
+  }
 
   //ensure category is valid
   const validCategories = ['cardiovascular', 'colorectal', 'ent', 'gastro', 'general', 'gynecology', 'eyes', 'orthopedic', 'pain-management', 'spine', 'podiatry', 'urology'];

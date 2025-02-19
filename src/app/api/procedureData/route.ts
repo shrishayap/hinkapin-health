@@ -1,8 +1,8 @@
 import { sql } from '@vercel/postgres';
 import { NextResponse } from 'next/server';
 
-export async function GET(request: { nextUrl: { searchParams: any; }; }) {
-    const { searchParams } = request.nextUrl;
+export async function GET(request: Request) {
+    const { searchParams } = new URL(request.url);
     let uuid = searchParams.get('uuid');
 
     try {

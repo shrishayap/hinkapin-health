@@ -3,7 +3,7 @@ import Header from "@/components/header";
 import SpecialProcedureCard from "./specialProcedureCard";
 import { useTranslations } from 'next-intl';
 
-export function Page() {
+export default function Page() {
     const t = useTranslations('SpecialtyProcedures');
 
     return (
@@ -27,4 +27,3 @@ export function Page() {
     )
 }
 
-export default Page;

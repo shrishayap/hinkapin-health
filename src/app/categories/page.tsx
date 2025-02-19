@@ -1,7 +1,6 @@
 import { redirect } from "next/navigation";
 
-export function Page() {
+export default function Page() {
     return redirect('/categories/all')
 }
 
-export default Page
