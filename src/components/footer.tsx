@@ -4,6 +4,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useTranslations } from 'next-intl';
@@ -53,8 +54,8 @@ export const Footer = () => {
                 <div className="text-left sm:space-y-2 sm:text-center">
                     <Link href="/acknowledgements" className="block hover:underline">{t('acknowledgements')}</Link>
                     <div className="flex justify-left sm:justify-center space-x-3 ">
-                        <Link href="https://www.facebook.com/people/Hinkapin-Health-High-Quality-Surgery-Made-Affordable/61556291644876/"><FaFacebook className="w-6 h-6" /></Link>
-                        <Link href="https://twitter.com/NTTC_SC"><FaXTwitter className="w-6 h-6" /></Link>
+                        <Link href="https://www.facebook.com/people/Hinkapin-Health-LLC/100083023406799/"><FaFacebook className="w-6 h-6" /></Link>
+                        <Link href="https://www.instagram.com/hinkapinhealth/"><FaInstagram className="w-6 h-6" /></Link>
                     </div>
                 </div>
 
